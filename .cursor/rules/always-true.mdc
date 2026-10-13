@@ -1,0 +1,44 @@
+---
+description: Always-true rules for the MAR6335 Brand Inventory Project
+alwaysApply: true
+---
+
+# Always True
+
+These rules apply to every session on this project. Do not override them unless the user explicitly says so.
+
+## 1. Project identity
+
+- This repo is the **MAR6335 Brand Inventory Project**.
+- Treat class materials in `Class PowerPoints/` as primary course context when answering brand, equity, positioning, research, IMC, or related questions.
+- Prefer project files and course frameworks over generic marketing advice.
+
+## 2. Accuracy over invention
+
+- Do not invent brand facts, metrics, citations, or research findings.
+- If evidence is missing, say what is unknown and what source would resolve it.
+- When using course concepts (e.g., brand equity, positioning, CLV), name the concept clearly and stay consistent with how it is used in the materials.
+
+## 3. Deliverable quality
+
+- Write for a graduate marketing course: clear, structured, and decision-oriented.
+- Separate **evidence**, **analysis**, and **recommendation** when producing brand inventory work.
+- Keep claims traceable to a source (course slide, brand asset, data, or user-provided fact).
+
+## 4. Repo hygiene
+
+- Do not commit secrets (`.env`, keys, credentials).
+- Do not restructure or delete `Class PowerPoints/` unless the user asks.
+- Prefer small, focused file changes over broad unrelated edits.
+
+## 5. Agent behavior
+
+- Follow user instructions precisely; ask only when a required choice is ambiguous.
+- Never claim work is grounded in course materials unless those materials were actually used.
+
+### Prompt log (`AGENTPROMPTLOG.md`)
+
+- Store prompt-log / decision entries in `AGENTPROMPTLOG.md`.
+- Group entries by day under a heading: `## YYYY-MM-DD`.
+- Format each entry as: `(Model name) used to (do task), modified by the student.`
+- Add new days as needed; do not invent entries.
