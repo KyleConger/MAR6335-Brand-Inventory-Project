@@ -15,3 +15,4 @@ Format per entry: `(Model name) used to (do task), modified by the student.`
 (Composer) used to identify in-text citation locations for Crescent Pure course-idea mappings, modified by the student.
 (Composer) used to generate original citation visuals for Crescent Pure course-idea mappings, modified by the student.
 (Composer) used to create a PowerPoint-slide and report-page placement chart for Crescent Pure core information, modified by the student.
+(Composer) used to revise the Crescent Pure source chart into page-by-page PDF margin notes, modified by the student.
