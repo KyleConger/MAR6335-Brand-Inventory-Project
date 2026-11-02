@@ -1,0 +1,52 @@
+﻿--- SLIDE 1 ---
+Quantitative Research I: Measurement Concepts
+
+--- SLIDE 2 ---
+Overview Information sought Types of questions Levels of measurement
+
+--- SLIDE 3 ---
+Information Sought Guided by research problem Determine if respondents can answer the key questions Avoid straying off into “interesting” areas of questioning
+
+--- SLIDE 4 ---
+Will They Remember? Will the respondent be able to remember the information sought?
+
+--- SLIDE 5 ---
+Types of Forgetting Omission unable to recall something that took place Telescoping remembering an event as occurring more recently than when it actually occurred Creation remembering an event that did not actually occur
+
+--- SLIDE 6 ---
+Example of Telescoping QUESTION A: Several products are listed below. Please indicate with an “X” each product that you or anyone in your household has purchased in the last three months. QUESTION B: Several products are listed below. Please indicate with an “X” which products you or anyone in your household has ever purchased. Then, for each product ever bought, please indicate with an “X” which products have been purchased in the last three months.
+
+--- SLIDE 7 ---
+Percent Stating that Product Had been Purchased in Last Three Months Question A Question B Glue 46% 32% Aspirin 68% 57% Tires 32% 24% CD 41% 32%
+
+--- SLIDE 8 ---
+Form of Response Open-ended What do you like best about Snickers? ________________ ______________________________________________________________________________________________ Dichotomous Do you eat candy bars? Yes_____ No_____
+
+--- SLIDE 9 ---
+Form of Response (2) Multichotomous Snickers…(check all that apply) ___ Satisfies appetite ___ Provides me with energy ___ Satisfies chocolate/candy cravings ___ Appeals to adults ___ Is fun to eat
+
+--- SLIDE 10 ---
+Close-Ended Questions Answers should be… Mutually exclusive No overlapping categories e.g., “never used; used once; used twice; used 3 or more times” e.g., “Age: 0-10; older than 10 but younger than 20; 20 or older but younger than 30; 30 – 50; older than 50” Collectively exhaustive That is, account for all possible answers To be safe, use: __ Other (explain) ______________________ Use words respondents use Determined through exploratory research
+
+--- SLIDE 11 ---
+Levels of Measurement Nominal Ordinal Interval Ratio
+
+--- SLIDE 12 ---
+Nominal Measurement Nominal – numbers are used only to classify Which of the following candy bars do you like? (Check all that apply) _____Twix _____Mars _____Snickers _____Milky Way
+
+--- SLIDE 13 ---
+Ordinal Scale Ordinal – numbers used to indicate rank Please rank the candy bars on the following list according to your liking for each, assigning 1 to your most preferred and 4 to your least preferred. _____Twix _____Mars _____Snickers _____Milky Way
+
+--- SLIDE 14 ---
+Interval Scale Interval – distances between integers are subjectively equal Please indicate how much you like each of the candy bars on the following list by checking the appropriate position on the scale. Dislike a lot Dislike Like Like a lot Twix ______ ______ ______ ______ Mars ______ ______ ______ ______ Snickers ______ ______ ______ ______ Milky Way ______ ______ ______ ______
+
+--- SLIDE 15 ---
+Ratio Scale Ratio – differences between numbers are comparable Please divide 100 points among the following candy bars according to how much you like each. _____ Mars _____ Snickers _____ Twix _____ Milky Way
+
+--- SLIDE 16 ---
+Conclusion As you conduct your brand audit research, think carefully about what information you really need Consider the quality of the data you want to gather and the nature of the analyses you will want to conduct
+
+--- SLIDE 17 ---
+End of Lecture
+
+

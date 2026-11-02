@@ -1,0 +1,124 @@
+--- SLIDE 1 ---
+Quantitative Research II:  Questionnaire Design
+
+--- SLIDE 2 ---
+Overview
+Method of administering
+Question content
+Question wording
+Question sequence
+Pretesting
+
+--- SLIDE 3 ---
+Method of Administering
+Mail
+Telephone
+Personal interview
+Door-to-door
+Mall intercept
+Web
+
+--- SLIDE 4 ---
+Question Content
+Is the question necessary?  How will it be used to address the research purpose?
+Has the question been adequately covered by other questions?
+Do respondents have the necessary information?
+Will respondents provide the information?
+Avoid embarrassing or threatening questions
+Address sensitive issues later in the survey
+
+--- SLIDE 5 ---
+Guidelines for Question Wording
+Use simple words and language
+Have you ever experienced cognitive dissonance after buying a new car?
+Avoid ambiguity
+What is the most important consideration in buying a car?
+Avoid leading questions
+Many consumers are concerned about the security of Internet transactions.  What is your chief concern about using the Internet to make purchases?
+
+--- SLIDE 6 ---
+More Question Guidelines
+Avoid implicit assumptions
+How can Starbucks improve its excellent customer service?
+Avoid generalizations 
+How do you feel about recent movies?
+Avoid double-barreled questions
+How would you rate the friendliness and knowledge of Best Buy salespeople?
+
+--- SLIDE 7 ---
+Guidelines for Sequencing
+Use simple, interesting opening questions to build momentum
+Use the funnel approach, asking broad questions first
+Group questions by topic or form
+Place demographics, as well as difficult or sensitive questions, toward the end
+Be wary of context effects
+
+--- SLIDE 8 ---
+Context Effects: Perceived Frequency
+Q:  On average, how much time do you spend on your smartphone each day?
+Scale 1
+Scale 2
+Up to ½ hour
+Up to 2 ½ hours
+½ to 1 hour
+2 ½ to 3 hours
+1 to 1 ½ hours
+3 to 3 ½ hours
+1 ½ to 2 hours
+3 ½ to 4 hours
+2 to 2 ½ hours
+4 to 4 ½ hours
+> 2 ½ hours
+> 4 ½ hours
+
+--- SLIDE 9 ---
+Context Effects: Impact on Results 
+Scale 1
+Scale 2
+Percent Reporting > 2 ½ hrs
+16%
+38%
+
+--- SLIDE 10 ---
+“How interested are you in buying this new product?”
+Very Much Interested
+Immediately after description
+   2.8%
+After asking the advantages
+ 16.7%
+After asking the disadvantages
+    0.0%
+After asking the advantages and then the disadvantages
+   5.7%
+After asking the disadvantages and then the advantages
+   8.3%
+
+--- SLIDE 11 ---
+Why Pretest Questionnaires?
+Test for: 
+Length of time
+Does it measure what you want?
+Anything missing that should be asked?
+Clarity
+Unambiguous questions
+Unambiguous answers
+
+--- SLIDE 12 ---
+How to Pretest
+Informal
+Colleagues
+Secretaries and other staff
+Family
+Pilot test
+Individual interviews
+Focus groups
+
+--- SLIDE 13 ---
+Conclusion 
+Advantage of surveys is the numerical data they generate—use a preponderance of scaled measures
+At least some of the measures should be relative to the competition
+Questionnaire should be designed with input from qualitative research
+Pretest the questionnaire to be sure it works
+
+--- SLIDE 14 ---
+End of Lecture

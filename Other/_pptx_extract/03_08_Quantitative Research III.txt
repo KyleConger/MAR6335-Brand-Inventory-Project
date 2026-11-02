@@ -1,0 +1,49 @@
+﻿--- SLIDE 1 ---
+Quantitative Research III: Measuring Brand Equity
+
+--- SLIDE 2 ---
+Overview Measuring Awareness Measuring Associations Features and Benefits Other Associations Measuring Perceived Quality Measuring Loyalty Preference Net Promoter Score (NPS)
+
+--- SLIDE 3 ---
+Brand Awareness Unaided Recall Which brands of paper towels are you familiar with? ____________ Which brands would you consider purchasing? _______________ [Consideration Set] Aided Recall Which extra-absorbent paper towel brands can you name? _____________ Recognition Which of the following brands of paper towel are you familiar with? __Bounty, __Viva, __Scott, etc.
+
+--- SLIDE 4 ---
+Brand Associations Perceptions (including Perceived Quality) Please rate each of the following brands of paper towel on these dimensions: Absorbency Economy Strength Quality Attractive designs Response scale: 1= low; 10= high Or 1-4, 1-5, 1-7 scale
+
+--- SLIDE 5 ---
+Measuring Importance: Simple Ranking Rank the following in order of importance (1 = most important): Rank High Gas Mileage ____ Fast Acceleration ____ Sporty Styling ____ Roominess ____ Good Handling ____ etc. ____ … ____
+
+--- SLIDE 6 ---
+Measuring Importance: Interval Rating Scale When buying a car, how important is each of the following? Extremely Extremely Unimportant Important High Gas Mileage 1 2 3 4 5 6 7 Fast Acceleration 1 2 3 4 5 6 7 Sporty Styling 1 2 3 4 5 6 7 Roominess 1 2 3 4 5 6 7 Good Handling 1 2 3 4 5 6 7
+
+--- SLIDE 7 ---
+Measuring Importance: Fixed Sum Allocation Allocate 100 points among the following attributes. The number of points allocated to each attribute should indicate its relative importance. # of points allocated High Gas Mileage ____ Fast Acceleration ____ Sporty Styling ____ Roominess ____ Good Handling ____ etc. ____
+
+--- SLIDE 8 ---
+Representing Associations Brands 1 2 3 Salient Import. Rating Rating Rating Attributes Weight Raw Wt. Raw Wt. Raw Wt. AGGREGATED PERCEPTIONS    SHARE OF PERCEPTIONS
+
+--- SLIDE 9 ---
+Example CYPRESS & GROVE SWAMP-HEAD FIRST MAGNITUDE IMPORT. CONVEN. 8 6 7 4 MUSIC 9 4 8 7 INEXP. 6 7 8 4 SOCIAL 8 6 5 8
+
+--- SLIDE 10 ---
+Weighted Ratings CYPRESS & GROVE SWAMPHEAD FIRST MAGNITUDE CONVEN. 32 24 28 MUSIC 63 28 56 INEXP. 24 28 32 SOCIAL 64 48 40 TOTAL 183 128 156 SHARE 39% 27% 33%
+
+--- SLIDE 11 ---
+Brand Personality Set of human characteristics associated with or attributed to the brand (Aaker, 1997) Brands can be rated on personality dimensions similar to other more product feature-based dimensions
+
+--- SLIDE 12 ---
+Brand Personality Dimensions Sincerity Down-to-earth, Honest, Wholesome, Cheerful Excitement Daring, Spirited, Imaginative, Up-to-date Competence Reliable, Intelligent, Successful Sophistication Upper Class, Charming Ruggedness Outdoorsy, Tough
+
+--- SLIDE 13 ---
+Brand Loyalty Brand Attitude How satisfied are you with Bounty paper towels? very dissatisfied_ _ _ _ _ _ _very satisfied How likely are you to repurchase Bounty paper towels? very unlikely_ _ _ _ _ _ _very likely Brand Preference Please rank order the following brands in terms of your preference: Bounty, Viva, Scott, etc.
+
+--- SLIDE 14 ---
+Net Promoter Score (NPS) "On a scale of zero to 10, how likely is it that you would recommend Bounty to your friends or colleagues?" * Detractors (D) = 0 through 6 Promoters (P) = 9 or 10 NPS (%) = %P - %D *Since NPS is a measure of brand loyalty, analyze responses only from those who use the product!
+
+--- SLIDE 15 ---
+Conclusion As you conduct your brand audit, be sure to include measures of each of the components of brand equity. Wherever possible, include perceptions of competing brands to get a more complete picture.
+
+--- SLIDE 16 ---
+End of Lecture
+
+

@@ -1,0 +1,52 @@
+﻿--- SLIDE 1 ---
+Qualitative Research I: Introduction and Observational Techniques
+
+--- SLIDE 2 ---
+Overview Uses of Qualitative Research Forms of Qualitative Research Observational Research Techniques Text Mining Consumer Ethnography Pros and Cons of Observational Research
+
+--- SLIDE 3 ---
+Uses of Qualitative Research Obtain preliminary ideas about consumer perceptions of a topic Discovery! Identify unanticipated problems and opportunities Generate possible explanations (hypotheses) about a market trend Test new product, package, ad concepts Provide input to questionnaire design
+
+--- SLIDE 4 ---
+Common Forms Observation Focus Groups Individual Depth Interviews
+
+--- SLIDE 5 ---
+Observational Research Dimensions of Observational Methods: Natural vs. Staged Disguised vs. Undisguised Structured vs. Unstructured Human vs. Technology
+
+--- SLIDE 6 ---
+Social Listening
+
+--- SLIDE 7 ---
+For Delivery of Relevant Insights
+
+--- SLIDE 8 ---
+…& Whether that Buzz is Positive
+
+--- SLIDE 9 ---
+Text Mining Most applicable to C2C data Most useful for detecting common brand associations Many tools available, of varying complexity Demonstration of a very simple tool
+
+--- SLIDE 10 ---
+Example www.ratebeer.com Corona Extra 50 most recent ratings www.wordclouds.com
+
+--- SLIDE 11 ---
+Simple Word Frequency List
+
+--- SLIDE 12 ---
+Word Cloud Result
+
+--- SLIDE 13 ---
+Observational Techniques: Consumer Ethnography In-home interviews In-field observation Personal Electronic
+
+--- SLIDE 14 ---
+Observation: Pros Major Advantages: Ability to observe actual marketplace behavior. People do not always remember what they actually do. People sometimes misrepresent what they do. “Discovery” of unanticipated phenomena
+
+--- SLIDE 15 ---
+Observation: Cons Major Disadvantages: Depends on researcher’s interpretations. Without inquiry, researcher must infer motives Must wait for target behavior to happen Risk of idle time
+
+--- SLIDE 16 ---
+Conclusion Does your firm use qualitative research? Are there any current challenges facing your firm where observational research could potentially yield important insights?
+
+--- SLIDE 17 ---
+End of Lecture
+
+
