@@ -1,0 +1,2659 @@
+{
+  "Executive_Summary": [
+    [
+      "On Cloud — C2C Brand Exploratory Executive Summary",
+      ""
+    ],
+    [
+      "",
+      ""
+    ],
+    [
+      "Section / Item",
+      "Content (evidence / analysis)"
+    ],
+    [
+      "Study type",
+      "C2C (consumer-to-consumer) Reddit text mining — primary research input for Brand Exploratory (Assignments/04-brand-exploratory-strategy-report.md). Focus: meaning of the brand to consumers, not star ratings."
+    ],
+    [
+      "Brand",
+      "On Running / On Cloud (Swiss running brand; consumer shorthand includes OnCloud, Ons, Cloud* models)."
+    ],
+    [
+      "Course framework — brand equity components",
+      "Findings organized around the principal Brand Exploratory dimensions: brand awareness, associations (brand image/meaning), perceived quality, loyalty, and brand personality — aligned with Brand Equity Components lectures (01_03_Brand Equity Components I; 01_04_Brand Equity Components II; 01_05_Brand Equity Components III; 01_06_Brand Equity Components IV) and measuring guidance in 03_08_Quantitative Research III."
+    ],
+    [
+      "Course method note",
+      "Text mining is positioned in class as most applicable to C2C data and useful for detecting common brand associations (03_01_Qualitative Research I — Text Mining). C2C findings should feed qualitative probes and quantitative association measurement (strength / valence / uniqueness per Brand Exploratory assignment)."
+    ],
+    [
+      "EVIDENCE — sample size",
+      "Records scanned: 298,854 (39,782 posts; 259,072 comments). On-relevant hits: 12,492 (702 posts; 11,790 comments). Hit rate: 4.18%."
+    ],
+    [
+      "EVIDENCE — awareness signals (proxies)",
+      "Reddit C2C cannot measure recognition vs recall as in survey (Brand Awareness Pyramid: Top of Mind → Brand Recall → Brand Recognition → Unaware; 01_03_Brand Equity Components I; measurement wording in 03_08_Quantitative Research III). Proxy signals: (1) dedicated r/OnRunning community discourse volume; (2) unaided-style spontaneous mentions in general running/sneaker subs using brand-specific language (On Cloud*, Ons, Cloudmonster, etc.); (3) co-mention with consideration-set competitors. These support hypothesis generation for aided/unaided awareness items, not population awareness levels."
+    ],
+    [
+      "ANALYSIS — key associations (brand image)",
+      "Most frequent association themes in On-relevant texts: Style / fashion / aesthetics (n=1654); Fit / sizing / narrow (n=1092); Comfort (n=889); Everyday / lifestyle wear (n=882); Durability / longevity (n=690); Performance / running / speed (n=609); Injury / support concerns (n=506); Cloud cushioning / cloud feel (n=474). Per 01_04_Brand Equity Components II, associations = brand meaning/image; dimensions to measure next: Strength, Favorability, Uniqueness (assignment also uses Strength/Valence/Uniqueness scales)."
+    ],
+    [
+      "ANALYSIS — perceived quality",
+      "Consumer talk centers on comfort/cushioning (cloud feel), fit/narrowness, durability vs. price, aesthetics, and performance role (daily trainer vs. lifestyle). Perceived quality is relative to competitors (01_05_Brand Equity Components III definition). See Perceived_Quality sheet."
+    ],
+    [
+      "ANALYSIS — loyalty",
+      "Loyalty pyramid framing (01_06_Brand Equity Components IV): Switchers → Habitual → Switching-cost satisfied → Brand-as-friend → Committed. Pattern counts — repurchase_intent=135, advocacy_recommend=322, committed_love=124, switching_away=132, criticism_intensity=290. NPS-style recommend language appears but is not a computed NPS (see 03_08_Quantitative Research III)."
+    ],
+    [
+      "ANALYSIS — brand personality",
+      "Language skews toward Excitement (trendy/stylish/up-to-date) and Sophistication (premium/Swiss/design), with Competence (technical/CloudTec) also present — mapped to Aaker facets taught in 02_03_Brand Positioning III and 03_08_Quantitative Research III."
+    ],
+    [
+      "EVIDENCE — competitor co-mentions",
+      "Most frequent co-mentioned competitors in On-relevant posts/comments: Asics (n=338); Nike (n=299); Hoka (n=274); Adidas (n=228); Brooks (n=201)."
+    ],
+    [
+      "Implication for Brand Image–Identity Gap",
+      "Treat high-frequency C2C themes as candidate brand-image associations for the Brand Image Matrix. Measure the same five inventory identity associations PLUS emergent C2C associations (assignment guidance). Rate Strength, Valence, Uniqueness on 1–5 scales (04-brand-exploratory-strategy-report)."
+    ],
+    [
+      "Caveat",
+      "Enthusiast Reddit sample ≠ general target market. Interpret as directional C2C meaning, then confirm with qualitative interviews and quantitative survey."
+    ]
+  ],
+  "Methodology": [
+    [
+      "Methodology",
+      ""
+    ],
+    [
+      "",
+      ""
+    ],
+    [
+      "Section / Item",
+      "Content (evidence / analysis)"
+    ],
+    [
+      "Sources",
+      "Eight Reddit JSONL extracts in Brand Sentiment Analysis/: AskRunningShoeGeeks (posts+comments), OnRunning (comments), RunningFashion (comments), RunningShoes (posts+comments), Sneakers (posts+comments)."
+    ],
+    [
+      "Processing",
+      "Streamed line-by-line JSON parse; posts use title+selftext; comments use body; removed/deleted bodies excluded from text."
+    ],
+    [
+      "Matching rules — high precision",
+      "Brand-relevant if ANY of: (a) model/brand phrases via regex (On Cloud, OnCloud, On Running, Cloudtec, Cloudmonster, Cloudsurfer, Cloudstratus, Cloudrunner, Cloudflow, Cloudswift, Cloudnova, Cloud X, The Roger / Federer x On, etc.); (b) possessive/colloquial 'Ons' patterns (my Ons, pair of Ons, wear Ons…); (c) 'On' + shoe/running/cloud model collocates; (d) ANY record from r/OnRunning (brand community context). Bare preposition 'on' alone is NOT matched."
+    ],
+    [
+      "False-positive control",
+      "Deliberately avoided matching standalone 'on'. Documented rule tags counted in AI pipeline. Residual risk: occasional figurative uses of model names or 'Roger' ambiguity — curated quotes reviewed for exhibit use."
+    ],
+    [
+      "Cleaning",
+      "URL stripping for n-grams; lowercase tokenization; stopword removal; simple valence lexicon (positive/negative keyword counts) — heuristic only."
+    ],
+    [
+      "Association coding",
+      "Dictionary/theme lexicon over On-relevant texts; frequency = # of On-relevant records containing theme pattern(s). Example quotes stored verbatim from source text."
+    ],
+    [
+      "Course alignment",
+      "C2C web search is required primary method for Brand Exploratory. Text mining for associations per 03_01_Qualitative Research I. Equity components per 01_03–01_06. Measurement blueprint for survey per 03_08_Quantitative Research III and assignment association scales (Strength/Valence/Uniqueness)."
+    ],
+    [
+      "Limitations",
+      "Reddit bias (enthusiast, English-heavy, fashion+running mix); r/OnRunning inflates volume and may skew loyalty; automated valence/personality are proxies; no demographics; awareness recognition vs recall not directly measurable from C2C; co-mention ≠ preference."
+    ],
+    [
+      "Decisions made without user",
+      "Included all eight files; treated r/OnRunning as On-relevant; competitor list expanded slightly (Puma, UA, Mizuno, Topo) beyond core list; 12 Excel sheets as recommended."
+    ],
+    [
+      "Reproducibility",
+      "Script: Brand Sentiment Analysis/_oncloud_c2c_mine.py; output: OnCloud_C2C_Brand_Exploratory.xlsx."
+    ],
+    [
+      "Generated",
+      "2026-11-17T18:41:54"
+    ]
+  ],
+  "Mentions_By_Source": [
+    [
+      "source_file",
+      "subreddit",
+      "record_type",
+      "records_scanned",
+      "on_relevant",
+      "pct_on_relevant"
+    ],
+    [
+      "r_askrunningshoegeeks_comments.jsonl",
+      "AskRunningShoeGeeks",
+      "comment",
+      53300,
+      251,
+      0.47
+    ],
+    [
+      "r_askrunningshoegeeks_posts.jsonl",
+      "AskRunningShoeGeeks",
+      "post",
+      23668,
+      496,
+      2.1
+    ],
+    [
+      "r_onrunning_comments.jsonl",
+      "ONrunning",
+      "comment",
+      11319,
+      10991,
+      97.1
+    ],
+    [
+      "r_runningfashion_comments.jsonl",
+      "runningfashion",
+      "comment",
+      47823,
+      167,
+      0.35
+    ],
+    [
+      "r_runningshoes_comments.jsonl",
+      "runningshoes",
+      "comment",
+      31315,
+      257,
+      0.82
+    ],
+    [
+      "r_runningshoes_posts.jsonl",
+      "runningshoes",
+      "post",
+      3964,
+      164,
+      4.14
+    ],
+    [
+      "r_sneakers_comments.jsonl",
+      "Sneakers",
+      "comment",
+      115315,
+      124,
+      0.11
+    ],
+    [
+      "r_sneakers_posts.jsonl",
+      "Sneakers",
+      "post",
+      12150,
+      42,
+      0.35
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Match rule tag counts (among On-relevant records)",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "rule_tag",
+      "count",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "subreddit_onrunning",
+      10991,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "model_or_brand_phrase",
+      2810,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "on_brandish_phrase",
+      1020,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "ons_possessive_usage",
+      70,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Model / brand phrase mention counts (On-relevant texts; multi-label)",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "model_or_phrase",
+      "count",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "On Cloud",
+      940,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Cloudmonster",
+      646,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "On Running",
+      476,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Cloudsurfer",
+      355,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Cloudrunner",
+      220,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Cloud 5",
+      166,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Cloud X",
+      97,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Cloudnova",
+      87,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Cloudswift",
+      60,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "The Roger",
+      50,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Cloudflow",
+      35,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Cloudultra",
+      33,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Cloudtec",
+      32,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Cloudstratus",
+      27,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Cloudaway",
+      8,
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Cloudrift",
+      3,
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  "Key_Associations": [
+    [
+      "rank",
+      "association_theme",
+      "frequency_n",
+      "pct_of_on_hits",
+      "dominant_valence_heuristic",
+      "valence_pos",
+      "valence_neg",
+      "valence_mixed_neutral",
+      "example_quote",
+      "association_type_course",
+      "strength_proxy_note",
+      "favorability_uniqueness_note",
+      "brand_image_matrix_candidate"
+    ],
+    [
+      1,
+      "Style / fashion / aesthetics",
+      1654,
+      13.24,
+      "mixed/neutral",
+      580,
+      112,
+      962,
+      "Lightweight but stable long-run shoes to replace my Kayano 31 I’m training for a marathon early next year, and I’m looking to upgrade the shoes I use for my long runs/recovery. Currently, I have two in my rotation: \\- A…",
+      "See 01_04 types (attributes/benefits/lifestyle/personality/competitors/celebrity/country)",
+      "Higher frequency ≈ higher salience/strength proxy only; survey Strength item required (03_08 / assignment).",
+      "Candidate POD if CloudTec/cloud-feel language is distinctive vs Hoka max-cushion narrative; confirm uniqueness in survey.",
+      "Yes — emergent image association"
+    ],
+    [
+      2,
+      "Fit / sizing / narrow",
+      1092,
+      8.74,
+      "mixed/neutral",
+      337,
+      158,
+      597,
+      "ON Cloudmonster 2 - quality concerns Recently bought the Nike Vomero Plus and had one of the lace loops snap literally after trying them on first time. I'm now looking at the Cloudmonster 2. I have however read others' …",
+      "See 01_04 types (attributes/benefits/lifestyle/personality/competitors/celebrity/country)",
+      "Higher frequency ≈ higher salience/strength proxy only; survey Strength item required (03_08 / assignment).",
+      "Candidate POD if CloudTec/cloud-feel language is distinctive vs Hoka max-cushion narrative; confirm uniqueness in survey.",
+      "Yes — emergent image association"
+    ],
+    [
+      3,
+      "Comfort",
+      889,
+      7.12,
+      "positive",
+      707,
+      61,
+      121,
+      "Shoes for long walks, treadmill and standing Hello, I walk around 10-15k steps a day, go to the gym where I do incline treadmill walks / normal walks and am stood up most of the day Seeing as its black friday and I've b…",
+      "See 01_04 types (attributes/benefits/lifestyle/personality/competitors/celebrity/country)",
+      "Higher frequency ≈ higher salience/strength proxy only; survey Strength item required (03_08 / assignment).",
+      "Likely POP or contested attribute vs running peers; measure uniqueness explicitly.",
+      "Yes — emergent image association"
+    ],
+    [
+      4,
+      "Everyday / lifestyle wear",
+      882,
+      7.06,
+      "positive",
+      407,
+      53,
+      422,
+      "Does the Cloudsurfer Max have any squeaking issues when walking? Before buying the **Cloudsurfer Max**, I wanted to ask: * **Does this model also suffer from squeaking when walking?** * **If so, which On Running models …",
+      "See 01_04 types (attributes/benefits/lifestyle/personality/competitors/celebrity/country)",
+      "Higher frequency ≈ higher salience/strength proxy only; survey Strength item required (03_08 / assignment).",
+      "Candidate POD if CloudTec/cloud-feel language is distinctive vs Hoka max-cushion narrative; confirm uniqueness in survey.",
+      "Yes — emergent image association"
+    ],
+    [
+      5,
+      "Durability / longevity",
+      690,
+      5.52,
+      "mixed/neutral",
+      254,
+      65,
+      371,
+      "ON Cloudmonster 2 - quality concerns Recently bought the Nike Vomero Plus and had one of the lace loops snap literally after trying them on first time. I'm now looking at the Cloudmonster 2. I have however read others' …",
+      "See 01_04 types (attributes/benefits/lifestyle/personality/competitors/celebrity/country)",
+      "Higher frequency ≈ higher salience/strength proxy only; survey Strength item required (03_08 / assignment).",
+      "Likely POP or contested attribute vs running peers; measure uniqueness explicitly.",
+      "Yes — emergent image association"
+    ],
+    [
+      6,
+      "Performance / running / speed",
+      609,
+      4.88,
+      "positive",
+      289,
+      64,
+      256,
+      "Lightweight but stable long-run shoes to replace my Kayano 31 I’m training for a marathon early next year, and I’m looking to upgrade the shoes I use for my long runs/recovery. Currently, I have two in my rotation: \\- A…",
+      "See 01_04 types (attributes/benefits/lifestyle/personality/competitors/celebrity/country)",
+      "Higher frequency ≈ higher salience/strength proxy only; survey Strength item required (03_08 / assignment).",
+      "Candidate POD if CloudTec/cloud-feel language is distinctive vs Hoka max-cushion narrative; confirm uniqueness in survey.",
+      "Yes — emergent image association"
+    ],
+    [
+      7,
+      "Injury / support concerns",
+      506,
+      4.05,
+      "positive",
+      207,
+      76,
+      223,
+      "Lightweight but stable long-run shoes to replace my Kayano 31 I’m training for a marathon early next year, and I’m looking to upgrade the shoes I use for my long runs/recovery. Currently, I have two in my rotation: \\- A…",
+      "See 01_04 types (attributes/benefits/lifestyle/personality/competitors/celebrity/country)",
+      "Higher frequency ≈ higher salience/strength proxy only; survey Strength item required (03_08 / assignment).",
+      "Candidate POD if CloudTec/cloud-feel language is distinctive vs Hoka max-cushion narrative; confirm uniqueness in survey.",
+      "Yes — emergent image association"
+    ],
+    [
+      8,
+      "Cloud cushioning / cloud feel",
+      474,
+      3.79,
+      "positive",
+      228,
+      49,
+      197,
+      "Looking for a new shoe coming from old Pegasus 34 Hi geeks, Budget: no budget Intended use: easy runs, long runs 6:00-8:00 min/km at distances between 5 and 15km. Faster paces up to 5:00 min/km as I improve. Foot size/s…",
+      "See 01_04 types (attributes/benefits/lifestyle/personality/competitors/celebrity/country)",
+      "Higher frequency ≈ higher salience/strength proxy only; survey Strength item required (03_08 / assignment).",
+      "Candidate POD if CloudTec/cloud-feel language is distinctive vs Hoka max-cushion narrative; confirm uniqueness in survey.",
+      "Yes — emergent image association"
+    ],
+    [
+      9,
+      "Switching / comparison shopping",
+      441,
+      3.53,
+      "mixed/neutral",
+      162,
+      42,
+      237,
+      "Lightweight but stable long-run shoes to replace my Kayano 31 I’m training for a marathon early next year, and I’m looking to upgrade the shoes I use for my long runs/recovery. Currently, I have two in my rotation: \\- A…",
+      "See 01_04 types (attributes/benefits/lifestyle/personality/competitors/celebrity/country)",
+      "Higher frequency ≈ higher salience/strength proxy only; survey Strength item required (03_08 / assignment).",
+      "Candidate POD if CloudTec/cloud-feel language is distinctive vs Hoka max-cushion narrative; confirm uniqueness in survey.",
+      "Yes — emergent image association"
+    ],
+    [
+      10,
+      "Premium / expensive / price",
+      421,
+      3.37,
+      "mixed/neutral",
+      168,
+      45,
+      208,
+      "Puma DNE3 Mid-Forefoot Striker Male 6’1 | 150lbs | 23:00 5K | Mid-forefoot striker Currently looking at getting my first carbon shoe for up to marathon distances, and I really like what I’ve been hearing about the Puma …",
+      "See 01_04 types (attributes/benefits/lifestyle/personality/competitors/celebrity/country)",
+      "Higher frequency ≈ higher salience/strength proxy only; survey Strength item required (03_08 / assignment).",
+      "Likely POP or contested attribute vs running peers; measure uniqueness explicitly.",
+      "Yes — emergent image association"
+    ],
+    [
+      11,
+      "Swiss / European / design-led",
+      209,
+      1.67,
+      "mixed/neutral",
+      66,
+      15,
+      128,
+      "ON Cloudmonster 2 - quality concerns Recently bought the Nike Vomero Plus and had one of the lace loops snap literally after trying them on first time. I'm now looking at the Cloudmonster 2. I have however read others' …",
+      "See 01_04 types (attributes/benefits/lifestyle/personality/competitors/celebrity/country)",
+      "Higher frequency ≈ higher salience/strength proxy only; survey Strength item required (03_08 / assignment).",
+      "Strong uniqueness candidate (celebrity/geography/tech naming); verify with Uniqueness scale.",
+      "Optional"
+    ],
+    [
+      12,
+      "Lightweight / agile",
+      194,
+      1.55,
+      "positive",
+      104,
+      18,
+      72,
+      "Lightweight but stable long-run shoes to replace my Kayano 31 I’m training for a marathon early next year, and I’m looking to upgrade the shoes I use for my long runs/recovery. Currently, I have two in my rotation: \\- A…",
+      "See 01_04 types (attributes/benefits/lifestyle/personality/competitors/celebrity/country)",
+      "Higher frequency ≈ higher salience/strength proxy only; survey Strength item required (03_08 / assignment).",
+      "Candidate POD if CloudTec/cloud-feel language is distinctive vs Hoka max-cushion narrative; confirm uniqueness in survey.",
+      "Optional"
+    ],
+    [
+      13,
+      "Trendy / hype / status",
+      105,
+      0.84,
+      "mixed/neutral",
+      36,
+      9,
+      60,
+      "WTH On? 91 medium fit men’s shoes, 4 wide A rant. I like the On Cloudsurfer Next wide I’ve been wearing for most of this year, and I’m ready for my next pair of shoes. Searching on.com, there are only 4 men’s styles tha…",
+      "See 01_04 types (attributes/benefits/lifestyle/personality/competitors/celebrity/country)",
+      "Higher frequency ≈ higher salience/strength proxy only; survey Strength item required (03_08 / assignment).",
+      "Candidate POD if CloudTec/cloud-feel language is distinctive vs Hoka max-cushion narrative; confirm uniqueness in survey.",
+      "Optional"
+    ],
+    [
+      14,
+      "Celebrity / Roger Federer",
+      74,
+      0.59,
+      "mixed/neutral",
+      25,
+      2,
+      47,
+      "Legit Check on the Roger pro 2",
+      "See 01_04 types (attributes/benefits/lifestyle/personality/competitors/celebrity/country)",
+      "Higher frequency ≈ higher salience/strength proxy only; survey Strength item required (03_08 / assignment).",
+      "Strong uniqueness candidate (celebrity/geography/tech naming); verify with Uniqueness scale.",
+      "Optional"
+    ],
+    [
+      15,
+      "Unique / distinctive ride (CloudTec)",
+      59,
+      0.47,
+      "mixed/neutral",
+      23,
+      5,
+      31,
+      "a 10K step walking shoe? (I know this is a running shoe sub, sorry) Hi all, firstly I know this is a running shoe sub, but I kinda don't know where else to turn to. I'm looking for a shoe to get my daily 10-12K steps an…",
+      "See 01_04 types (attributes/benefits/lifestyle/personality/competitors/celebrity/country)",
+      "Higher frequency ≈ higher salience/strength proxy only; survey Strength item required (03_08 / assignment).",
+      "Strong uniqueness candidate (celebrity/geography/tech naming); verify with Uniqueness scale.",
+      "Optional"
+    ]
+  ],
+  "Keywords": [
+    [
+      "ngram",
+      "n",
+      "type",
+      "salience_flag"
+    ],
+    [
+      "cloud",
+      1397,
+      "unigram",
+      "high"
+    ],
+    [
+      "out",
+      990,
+      "unigram",
+      "freq"
+    ],
+    [
+      "walking",
+      808,
+      "unigram",
+      "freq"
+    ],
+    [
+      "feet",
+      781,
+      "unigram",
+      "freq"
+    ],
+    [
+      "after",
+      754,
+      "unigram",
+      "freq"
+    ],
+    [
+      "cloudmonster",
+      734,
+      "unigram",
+      "high"
+    ],
+    [
+      "size",
+      725,
+      "unigram",
+      "freq"
+    ],
+    [
+      "i'm",
+      677,
+      "unigram",
+      "freq"
+    ],
+    [
+      "comfortable",
+      671,
+      "unigram",
+      "high"
+    ],
+    [
+      "code",
+      654,
+      "unigram",
+      "freq"
+    ],
+    [
+      "don",
+      633,
+      "unigram",
+      "freq"
+    ],
+    [
+      "long",
+      617,
+      "unigram",
+      "freq"
+    ],
+    [
+      "because",
+      594,
+      "unigram",
+      "freq"
+    ],
+    [
+      "great",
+      542,
+      "unigram",
+      "freq"
+    ],
+    [
+      "love",
+      528,
+      "unigram",
+      "freq"
+    ],
+    [
+      "runs",
+      516,
+      "unigram",
+      "freq"
+    ],
+    [
+      "thanks",
+      516,
+      "unigram",
+      "freq"
+    ],
+    [
+      "better",
+      515,
+      "unigram",
+      "freq"
+    ],
+    [
+      "off",
+      509,
+      "unigram",
+      "freq"
+    ],
+    [
+      "work",
+      493,
+      "unigram",
+      "freq"
+    ],
+    [
+      "bit",
+      491,
+      "unigram",
+      "freq"
+    ],
+    [
+      "fake",
+      486,
+      "unigram",
+      "freq"
+    ],
+    [
+      "foot",
+      461,
+      "unigram",
+      "freq"
+    ],
+    [
+      "wide",
+      456,
+      "unigram",
+      "high"
+    ],
+    [
+      "best",
+      451,
+      "unigram",
+      "freq"
+    ],
+    [
+      "last",
+      450,
+      "unigram",
+      "freq"
+    ],
+    [
+      "sure",
+      449,
+      "unigram",
+      "freq"
+    ],
+    [
+      "i've",
+      445,
+      "unigram",
+      "freq"
+    ],
+    [
+      "daily",
+      442,
+      "unigram",
+      "freq"
+    ],
+    [
+      "it's",
+      442,
+      "unigram",
+      "freq"
+    ],
+    [
+      "cloudtilt",
+      442,
+      "unigram",
+      "freq"
+    ],
+    [
+      "right",
+      441,
+      "unigram",
+      "freq"
+    ],
+    [
+      "around",
+      424,
+      "unigram",
+      "freq"
+    ],
+    [
+      "marathon",
+      423,
+      "unigram",
+      "freq"
+    ],
+    [
+      "different",
+      423,
+      "unigram",
+      "freq"
+    ],
+    [
+      "fit",
+      423,
+      "unigram",
+      "high"
+    ],
+    [
+      "find",
+      422,
+      "unigram",
+      "freq"
+    ],
+    [
+      "half",
+      419,
+      "unigram",
+      "freq"
+    ],
+    [
+      "don't",
+      401,
+      "unigram",
+      "freq"
+    ],
+    [
+      "max",
+      397,
+      "unigram",
+      "freq"
+    ],
+    [
+      "thank",
+      394,
+      "unigram",
+      "freq"
+    ],
+    [
+      "never",
+      388,
+      "unigram",
+      "freq"
+    ],
+    [
+      "asics",
+      381,
+      "unigram",
+      "high"
+    ],
+    [
+      "cloudsurfer",
+      371,
+      "unigram",
+      "high"
+    ],
+    [
+      "mine",
+      371,
+      "unigram",
+      "freq"
+    ],
+    [
+      "issue",
+      361,
+      "unigram",
+      "freq"
+    ],
+    [
+      "since",
+      359,
+      "unigram",
+      "freq"
+    ],
+    [
+      "lot",
+      356,
+      "unigram",
+      "freq"
+    ],
+    [
+      "see",
+      356,
+      "unigram",
+      "freq"
+    ],
+    [
+      "store",
+      350,
+      "unigram",
+      "freq"
+    ],
+    [
+      "squeak",
+      349,
+      "unigram",
+      "freq"
+    ],
+    [
+      "nike",
+      342,
+      "unigram",
+      "high"
+    ],
+    [
+      "though",
+      337,
+      "unigram",
+      "freq"
+    ],
+    [
+      "brand",
+      332,
+      "unigram",
+      "freq"
+    ],
+    [
+      "hyper",
+      330,
+      "unigram",
+      "freq"
+    ],
+    [
+      "heel",
+      328,
+      "unigram",
+      "freq"
+    ],
+    [
+      "squeaking",
+      315,
+      "unigram",
+      "freq"
+    ],
+    [
+      "laces",
+      309,
+      "unigram",
+      "freq"
+    ],
+    [
+      "before",
+      306,
+      "unigram",
+      "freq"
+    ],
+    [
+      "training",
+      305,
+      "unigram",
+      "freq"
+    ],
+    [
+      "hoka",
+      301,
+      "unigram",
+      "high"
+    ],
+    [
+      "ones",
+      296,
+      "unigram",
+      "freq"
+    ],
+    [
+      "toe",
+      294,
+      "unigram",
+      "high"
+    ],
+    [
+      "please",
+      294,
+      "unigram",
+      "freq"
+    ],
+    [
+      "every",
+      293,
+      "unigram",
+      "freq"
+    ],
+    [
+      "maybe",
+      286,
+      "unigram",
+      "freq"
+    ],
+    [
+      "help",
+      282,
+      "unigram",
+      "freq"
+    ],
+    [
+      "stability",
+      280,
+      "unigram",
+      "freq"
+    ],
+    [
+      "another",
+      276,
+      "unigram",
+      "freq"
+    ],
+    [
+      "next",
+      274,
+      "unigram",
+      "freq"
+    ],
+    [
+      "real",
+      273,
+      "unigram",
+      "freq"
+    ],
+    [
+      "probably",
+      263,
+      "unigram",
+      "freq"
+    ],
+    [
+      "support",
+      258,
+      "unigram",
+      "freq"
+    ],
+    [
+      "enough",
+      257,
+      "unigram",
+      "freq"
+    ],
+    [
+      "model",
+      255,
+      "unigram",
+      "freq"
+    ],
+    [
+      "foam",
+      254,
+      "unigram",
+      "freq"
+    ],
+    [
+      "down",
+      252,
+      "unigram",
+      "freq"
+    ],
+    [
+      "box",
+      251,
+      "unigram",
+      "freq"
+    ],
+    [
+      "brooks",
+      248,
+      "unigram",
+      "high"
+    ],
+    [
+      "easy",
+      247,
+      "unigram",
+      "freq"
+    ],
+    [
+      "cloudmonster hyper",
+      244,
+      "bigram",
+      "high"
+    ],
+    [
+      "half marathon",
+      140,
+      "bigram",
+      "freq"
+    ],
+    [
+      "toe box",
+      130,
+      "bigram",
+      "high"
+    ],
+    [
+      "cloud monster",
+      125,
+      "bigram",
+      "high"
+    ],
+    [
+      "long runs",
+      120,
+      "bigram",
+      "freq"
+    ],
+    [
+      "half size",
+      120,
+      "bigram",
+      "freq"
+    ],
+    [
+      "vomero plus",
+      119,
+      "bigram",
+      "freq"
+    ],
+    [
+      "referral code",
+      113,
+      "bigram",
+      "freq"
+    ],
+    [
+      "customer service",
+      106,
+      "bigram",
+      "freq"
+    ],
+    [
+      "cloudsurfer max",
+      92,
+      "bigram",
+      "high"
+    ],
+    [
+      "cloudboom strike",
+      91,
+      "bigram",
+      "high"
+    ],
+    [
+      "wide feet",
+      90,
+      "bigram",
+      "high"
+    ],
+    [
+      "nike vomero",
+      83,
+      "bigram",
+      "high"
+    ],
+    [
+      "daily trainer",
+      80,
+      "bigram",
+      "high"
+    ],
+    [
+      "cloud tilt",
+      77,
+      "bigram",
+      "high"
+    ],
+    [
+      "gift card",
+      63,
+      "bigram",
+      "freq"
+    ],
+    [
+      "discount code",
+      61,
+      "bigram",
+      "freq"
+    ],
+    [
+      "hoka clifton",
+      59,
+      "bigram",
+      "high"
+    ],
+    [
+      "cloudsurfer next",
+      55,
+      "bigram",
+      "high"
+    ],
+    [
+      "asics superblast",
+      53,
+      "bigram",
+      "high"
+    ],
+    [
+      "true size",
+      53,
+      "bigram",
+      "freq"
+    ],
+    [
+      "code please",
+      51,
+      "bigram",
+      "freq"
+    ],
+    [
+      "i'm sure",
+      50,
+      "bigram",
+      "freq"
+    ],
+    [
+      "cloud surfer",
+      50,
+      "bigram",
+      "high"
+    ],
+    [
+      "daily trainers",
+      50,
+      "bigram",
+      "high"
+    ],
+    [
+      "thanks advance",
+      49,
+      "bigram",
+      "freq"
+    ],
+    [
+      "brooks ghost",
+      49,
+      "bigram",
+      "high"
+    ],
+    [
+      "started squeaking",
+      49,
+      "bigram",
+      "freq"
+    ],
+    [
+      "check out",
+      48,
+      "bigram",
+      "freq"
+    ],
+    [
+      "flat feet",
+      47,
+      "bigram",
+      "freq"
+    ],
+    [
+      "walking around",
+      47,
+      "bigram",
+      "freq"
+    ],
+    [
+      "referral link",
+      47,
+      "bigram",
+      "freq"
+    ],
+    [
+      "asics gel",
+      46,
+      "bigram",
+      "high"
+    ],
+    [
+      "easy runs",
+      46,
+      "bigram",
+      "freq"
+    ],
+    [
+      "brooks glycerin",
+      45,
+      "bigram",
+      "high"
+    ],
+    [
+      "last season",
+      45,
+      "bigram",
+      "freq"
+    ],
+    [
+      "promo code",
+      45,
+      "bigram",
+      "freq"
+    ],
+    [
+      "energy return",
+      44,
+      "bigram",
+      "freq"
+    ],
+    [
+      "warranty claim",
+      44,
+      "bigram",
+      "freq"
+    ],
+    [
+      "fresh code",
+      44,
+      "bigram",
+      "freq"
+    ],
+    [
+      "mount coast",
+      43,
+      "bigram",
+      "freq"
+    ],
+    [
+      "saucony endorphin",
+      41,
+      "bigram",
+      "high"
+    ],
+    [
+      "walking clouds",
+      41,
+      "bigram",
+      "high"
+    ],
+    [
+      "cloud waterproof",
+      41,
+      "bigram",
+      "high"
+    ],
+    [
+      "adidas evo",
+      40,
+      "bigram",
+      "freq"
+    ],
+    [
+      "adios pro",
+      40,
+      "bigram",
+      "freq"
+    ],
+    [
+      "figure out",
+      38,
+      "bigram",
+      "freq"
+    ],
+    [
+      "washing machine",
+      38,
+      "bigram",
+      "freq"
+    ],
+    [
+      "long walks",
+      37,
+      "bigram",
+      "freq"
+    ],
+    [
+      "asics novablast",
+      37,
+      "bigram",
+      "high"
+    ],
+    [
+      "size down",
+      37,
+      "bigram",
+      "freq"
+    ],
+    [
+      "arch support",
+      37,
+      "bigram",
+      "freq"
+    ],
+    [
+      "paramount max",
+      36,
+      "bigram",
+      "freq"
+    ],
+    [
+      "right foot",
+      35,
+      "bigram",
+      "freq"
+    ],
+    [
+      "nike pegasus",
+      34,
+      "bigram",
+      "high"
+    ],
+    [
+      "gel nimbus",
+      34,
+      "bigram",
+      "freq"
+    ],
+    [
+      "cloud cloud",
+      34,
+      "bigram",
+      "high"
+    ],
+    [
+      "speed laces",
+      33,
+      "bigram",
+      "freq"
+    ],
+    [
+      "plantar fasciitis",
+      32,
+      "bigram",
+      "freq"
+    ],
+    [
+      "hoka bondi",
+      32,
+      "bigram",
+      "high"
+    ],
+    [
+      "squeaking after",
+      32,
+      "bigram",
+      "freq"
+    ],
+    [
+      "max cushion",
+      31,
+      "bigram",
+      "high"
+    ],
+    [
+      "long distance",
+      30,
+      "bigram",
+      "freq"
+    ],
+    [
+      "vomero premium",
+      29,
+      "bigram",
+      "high"
+    ],
+    [
+      "come out",
+      29,
+      "bigram",
+      "freq"
+    ],
+    [
+      "full marathon",
+      28,
+      "bigram",
+      "freq"
+    ],
+    [
+      "find comfortable",
+      28,
+      "bigram",
+      "high"
+    ],
+    [
+      "last long",
+      28,
+      "bigram",
+      "freq"
+    ],
+    [
+      "endorphin speed",
+      27,
+      "bigram",
+      "freq"
+    ],
+    [
+      "cloud monsters",
+      27,
+      "bigram",
+      "high"
+    ],
+    [
+      "cloudboom max",
+      27,
+      "bigram",
+      "high"
+    ],
+    [
+      "hope helps",
+      27,
+      "bigram",
+      "freq"
+    ],
+    [
+      "makes sense",
+      27,
+      "bigram",
+      "freq"
+    ],
+    [
+      "swiss flag",
+      27,
+      "bigram",
+      "high"
+    ],
+    [
+      "cloudtilt moon",
+      27,
+      "bigram",
+      "high"
+    ],
+    [
+      "current rotation",
+      26,
+      "bigram",
+      "freq"
+    ],
+    [
+      "knee pain",
+      26,
+      "bigram",
+      "freq"
+    ],
+    [
+      "great walking",
+      26,
+      "bigram",
+      "freq"
+    ],
+    [
+      "code off",
+      26,
+      "bigram",
+      "freq"
+    ],
+    [
+      "easy long",
+      25,
+      "bigram",
+      "freq"
+    ]
+  ],
+  "Perceived_Quality": [
+    [
+      "quality_dimension",
+      "frequency_n",
+      "dominant_valence_heuristic",
+      "pos",
+      "neg",
+      "example_quote_1",
+      "example_quote_2",
+      "course_note"
+    ],
+    [
+      "Aesthetics / look",
+      1726,
+      "mixed/neutral",
+      581,
+      104,
+      "Lightweight but stable long-run shoes to replace my Kayano 31 I’m training for a marathon early next year, and I’m looking to upgrade the shoes I use for my long runs/recovery. Currently, I have two in my rotation: \\- A…",
+      "Taking running more seriously, what shoe should I upgrade to? **Hey Guys,** I’ve been running in my Hoka Clifton 9s for a while now and I’m looking to upgrade to a better shoe. I’ve mostly been running for fun since it’…",
+      "Perceived quality = customer perception of overall quality vs intended purpose, relative to competitors (01_05_Brand Equity Components III). Survey: rate On and competitors on these dimensions (03_08)."
+    ],
+    [
+      "Fit / sizing",
+      1163,
+      "mixed/neutral",
+      358,
+      162,
+      "ON Cloudmonster 2 - quality concerns Recently bought the Nike Vomero Plus and had one of the lace loops snap literally after trying them on first time. I'm now looking at the Cloudmonster 2. I have however read others' …",
+      "Looking for a new shoe coming from old Pegasus 34 Hi geeks, Budget: no budget Intended use: easy runs, long runs 6:00-8:00 min/km at distances between 5 and 15km. Faster paces up to 5:00 min/km as I improve. Foot size/s…",
+      "Perceived quality = customer perception of overall quality vs intended purpose, relative to competitors (01_05_Brand Equity Components III). Survey: rate On and competitors on these dimensions (03_08)."
+    ],
+    [
+      "Comfort",
+      988,
+      "positive",
+      756,
+      33,
+      "Shoes for long walks, treadmill and standing Hello, I walk around 10-15k steps a day, go to the gym where I do incline treadmill walks / normal walks and am stood up most of the day Seeing as its black friday and I've b…",
+      "ON Cloudmonster 2 - quality concerns Recently bought the Nike Vomero Plus and had one of the lace loops snap literally after trying them on first time. I'm now looking at the Cloudmonster 2. I have however read others' …",
+      "Perceived quality = customer perception of overall quality vs intended purpose, relative to competitors (01_05_Brand Equity Components III). Survey: rate On and competitors on these dimensions (03_08)."
+    ],
+    [
+      "Durability",
+      810,
+      "mixed/neutral",
+      320,
+      68,
+      "ON Cloudmonster 2 - quality concerns Recently bought the Nike Vomero Plus and had one of the lace loops snap literally after trying them on first time. I'm now looking at the Cloudmonster 2. I have however read others' …",
+      "Looking for a new shoe coming from old Pegasus 34 Hi geeks, Budget: no budget Intended use: easy runs, long runs 6:00-8:00 min/km at distances between 5 and 15km. Faster paces up to 5:00 min/km as I improve. Foot size/s…",
+      "Perceived quality = customer perception of overall quality vs intended purpose, relative to competitors (01_05_Brand Equity Components III). Survey: rate On and competitors on these dimensions (03_08)."
+    ],
+    [
+      "Cushioning / ride",
+      583,
+      "positive",
+      267,
+      58,
+      "Looking for a new shoe coming from old Pegasus 34 Hi geeks, Budget: no budget Intended use: easy runs, long runs 6:00-8:00 min/km at distances between 5 and 15km. Faster paces up to 5:00 min/km as I improve. Foot size/s…",
+      "Most shoes feel like they’re falling off my ankle - why and what’s this called? 5’4, 150lbs, size 8.5, neutral step I’m a new runner and I currently wear New Balance 1080 v14 and like them. I’ve been trying out other pa…",
+      "Perceived quality = customer perception of overall quality vs intended purpose, relative to competitors (01_05_Brand Equity Components III). Survey: rate On and competitors on these dimensions (03_08)."
+    ],
+    [
+      "Performance / speed",
+      484,
+      "positive",
+      233,
+      50,
+      "Lightweight but stable long-run shoes to replace my Kayano 31 I’m training for a marathon early next year, and I’m looking to upgrade the shoes I use for my long runs/recovery. Currently, I have two in my rotation: \\- A…",
+      "Speed trainer/race shoe Recommendations I need an advice on how should've chose my speed/race shoe I dont particularly consider the distance/many times will be used thing I kinda need it to deliver decent performance fo…",
+      "Perceived quality = customer perception of overall quality vs intended purpose, relative to competitors (01_05_Brand Equity Components III). Survey: rate On and competitors on these dimensions (03_08)."
+    ],
+    [
+      "Value / price-quality",
+      344,
+      "positive",
+      168,
+      43,
+      "Help regarding NB 1080 v14 fit. Bigger Runner Hi All, I recently jumped to New Balance 1080s v14 from Hoka Clifton. I wear a wide (2E) and found that the Clifton’s even at wide (2E) caused blisters in my left big toe jo…",
+      "Help regarding NB 1080 v14 sizing? Bigger Runner. Hi All, I recently jumped to New Balance 1080s v14 from Hoka Clifton. I wear a wide (2E) and found that the Clifton’s even at wide (2E) caused blisters in my left big to…",
+      "Perceived quality = customer perception of overall quality vs intended purpose, relative to competitors (01_05_Brand Equity Components III). Survey: rate On and competitors on these dimensions (03_08)."
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "ANALYSIS (not raw evidence)",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Synthesis",
+      "C2C talk suggests On's perceived quality is multi-dimensional: soft/cloud cushioning and aesthetics often praised; fit (narrow) and durability/price frequently contested. Relative framing vs Hoka (max cushion), Nike (performance/speed), Brooks/Asics (reliable trainers) is common — consistent with measuring PQ comparatively.",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  "Loyalty_Signals": [
+    [
+      "signal",
+      "code",
+      "frequency_n",
+      "loyalty_pyramid_link",
+      "example_quote_1",
+      "example_quote_2",
+      "example_quote_3"
+    ],
+    [
+      "Advocacy / recommend language (NPS-adjacent; 03_08)",
+      "advocacy_recommend",
+      322,
+      "01_06_Brand Equity Components IV",
+      "Lightweight but stable long-run shoes to replace my Kayano 31 I’m training for a marathon early next year, and I’m looking to upgrade the shoes I use for my long runs/recovery. Currently, I have two in my rotation: \\- A…",
+      "Taking running more seriously, what shoe should I upgrade to? **Hey Guys,** I’ve been running in my Hoka Clifton 9s for a while now and I’m looking to upgrade to a better shoe. I’ve mostly been running for fun since it’…",
+      "Puma DNE3 Mid-Forefoot Striker Male 6’1 | 150lbs | 23:00 5K | Mid-forefoot striker Currently looking at getting my first carbon shoe for up to marathon distances, and I really like what I’ve been hearing about the Puma …"
+    ],
+    [
+      "Strong criticism (loyalty risk / detractor language)",
+      "criticism_intensity",
+      290,
+      "01_06_Brand Equity Components IV",
+      "Pls Reco: On Cloud Running Shoes Hey lovely runners! 😊🏃🏼‍♀️🏃 I’m hoping to try On Cloud running shoes and could really use some guidance. I only run twice a week, usually 5–10 km, so I’m definitely a casual runner. I ha…",
+      "New Shoe Recommendations When Everything Gives Me Blisters Hi Guys, I'm looking for some advice on a new pair of running shoes. I've got a marathon coming up in May so I'm looking for something that I could use for trai…",
+      "Best shoes for back and knee pain? I am 6’ 180. My knees and back have been terrible for a long time now with degenerative disk disease and sciatic/femoral nerve pain. In the last few months I’ve dropped 40ish lbs throu…"
+    ],
+    [
+      "Repurchase / multiple-pair language (Satisfied→Committed proxies)",
+      "repurchase_intent",
+      135,
+      "01_06_Brand Equity Components IV",
+      "New shoes knee/hip pain I have been running since April. Distances up to half marathon, long run regularly 12-18km. I started with C25k and worked up using first NRC and then Runna. My first half marathon was a week and…",
+      "Shoes Hello everyone! Yesterday, after my 32 mins run, I reached 642 km (since May 4th) of running with my Hoka Clifton 9. Left foot tends to slightly pronate and the shoe keeps this wrong form…is it time to buy another…",
+      "Shoes Hello everyone! Yesterday, after my 32 mins run, I reached 642 km (since May 4th) of running with my Hoka Clifton 9. Left foot tends to slightly pronate and the shoe keeps this wrong form…is it time to buy another…"
+    ],
+    [
+      "Switching / rejection language (Switcher level / erosion)",
+      "switching_away",
+      132,
+      "01_06_Brand Equity Components IV",
+      "Looking for a new shoe coming from old Pegasus 34 Hi geeks, Budget: no budget Intended use: easy runs, long runs 6:00-8:00 min/km at distances between 5 and 15km. Faster paces up to 5:00 min/km as I improve. Foot size/s…",
+      "Advice Needed: First Marathon Shoes BLUF: First marathon is next week and I’m torn on two shoes: Nike Alphafly 3 and New Balance Supercomp V3 For reference, I am 6’4 240. Retired college thrower 24 years old. I’ve been …",
+      "Nike Vomero Plus, Size Question Bought Nike Vomero Plus’s a few weeks ago and every run I get a blister in the same spot (at about mile 2 or 3), even on my very first run. I get the blister on only my right foot, about …"
+    ],
+    [
+      "Affective commitment / favorite language (top of Loyalty Pyramid)",
+      "committed_love",
+      124,
+      "01_06_Brand Equity Components IV",
+      "Shoes like Endorphin Pro 4 for wide feet? Recently I’ve been able to try on several popular or highly recommended shoes. The Endorphin Pro 4 was actually my favorite so far. Unfortunately, my feet, especially my heels a…",
+      "Recommendations for New Daily Trainers Hi Geeks! I am currently looking for new daily runners because I'm rather unhappy with my current pair. My first shoes ever years ago were the Saucony Tempus. I always liked them s…",
+      "Help me pick my next shoe! Current rotation: RAD UFO as a daily trainer ASICS Megablast for speed work Adidas Boston 12 Hoka Mach 6 Brooks Glycerin Max 1 Looking to get a different shoe as a long run cruiser, as any lon…"
+    ]
+  ],
+  "Brand_Personality": [
+    [
+      "aaker_facet_mapping",
+      "cue_frequency_n",
+      "example_quote",
+      "course_source",
+      "analysis_note"
+    ],
+    [
+      "Excitement (trendy / up-to-date / daring)",
+      271,
+      "I have a standard wide foot (2E) and normal arch. I have also a feet condition which is plantar fasciitis on my left foot which is almost healed now. I have a tendency to roll my ankles outwards sometimes while running …",
+      "Aaker (1997) facets in 02_03_Brand Positioning III and 03_08_Quantitative Research III",
+      "Inferred from consumer language in C2C; confirm with personality rating items in survey."
+    ],
+    [
+      "Sophistication (premium / design / Swiss)",
+      244,
+      "ON Cloudmonster 2 - quality concerns Recently bought the Nike Vomero Plus and had one of the lace loops snap literally after trying them on first time. I'm now looking at the Cloudmonster 2. I have however read others' …",
+      "Aaker (1997) facets in 02_03_Brand Positioning III and 03_08_Quantitative Research III",
+      "Inferred from consumer language in C2C; confirm with personality rating items in survey."
+    ],
+    [
+      "Ruggedness (outdoorsy / athletic)",
+      185,
+      "Advice on Running Shoes for Different Conditions (Winter, Trail, Road) Hi, my mom loves running marathons. She frequently does short-distance training runs and occasionally a full marathon. Because she lives in eastern …",
+      "Aaker (1997) facets in 02_03_Brand Positioning III and 03_08_Quantitative Research III",
+      "Inferred from consumer language in C2C; confirm with personality rating items in survey."
+    ],
+    [
+      "Competence (technical / engineered)",
+      161,
+      "Speed trainer/race shoe Recommendations I need an advice on how should've chose my speed/race shoe I dont particularly consider the distance/many times will be used thing I kinda need it to deliver decent performance fo…",
+      "Aaker (1997) facets in 02_03_Brand Positioning III and 03_08_Quantitative Research III",
+      "Inferred from consumer language in C2C; confirm with personality rating items in survey."
+    ],
+    [
+      "Sincerity (honest / wholesome) — sparse expected",
+      68,
+      "What ONE shoe is best for running + hills + stairs + conditioning (less fatigue, more energy)? I’m looking for help choosing one shoe that best fits my training style. Current shoe: • On Cloudsurfer Max running shoes, m…",
+      "Aaker (1997) facets in 02_03_Brand Positioning III and 03_08_Quantitative Research III",
+      "Inferred from consumer language in C2C; confirm with personality rating items in survey."
+    ],
+    [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "ANALYSIS",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Working personality hypothesis: On skews Excitement + Sophistication (fashion-forward, premium, Swiss design) with Competence (CloudTec/technical). Ruggedness appears mainly in trail/outdoor talk; Sincerity cues are thinner. Use as positioning/personality hypothesis for Brand Exploratory, not as final scores.",
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  "Competitor_Comparisons": [
+    [
+      "competitor",
+      "co_mention_n_in_on_relevant",
+      "pct_of_on_hits",
+      "example_quote",
+      "example_quote_2",
+      "positioning_hypothesis"
+    ],
+    [
+      "Asics",
+      338,
+      2.71,
+      "Lightweight but stable long-run shoes to replace my Kayano 31 I’m training for a marathon early next year, and I’m looking to upgrade the shoes I use for my long runs/recovery. Currently, I have two in my rotation: \\- A…",
+      "Shoes for long walks, treadmill and standing Hello, I walk around 10-15k steps a day, go to the gym where I do incline treadmill walks / normal walks and am stood up most of the day Seeing as its black friday and I've b…",
+      "Reliable daily-trainer / comfort POP comparison."
+    ],
+    [
+      "Nike",
+      299,
+      2.39,
+      "Shoes for long walks, treadmill and standing Hello, I walk around 10-15k steps a day, go to the gym where I do incline treadmill walks / normal walks and am stood up most of the day Seeing as its black friday and I've b…",
+      "ON Cloudmonster 2 - quality concerns Recently bought the Nike Vomero Plus and had one of the lace loops snap literally after trying them on first time. I'm now looking at the Cloudmonster 2. I have however read others' …",
+      "Performance/racing or mainstream athletic benchmark."
+    ],
+    [
+      "Hoka",
+      274,
+      2.19,
+      "Taking running more seriously, what shoe should I upgrade to? **Hey Guys,** I’ve been running in my Hoka Clifton 9s for a while now and I’m looking to upgrade to a better shoe. I’ve mostly been running for fun since it’…",
+      "Shoes for long walks, treadmill and standing Hello, I walk around 10-15k steps a day, go to the gym where I do incline treadmill walks / normal walks and am stood up most of the day Seeing as its black friday and I've b…",
+      "Often framed as max-cushion / stack alternative."
+    ],
+    [
+      "Adidas",
+      228,
+      1.83,
+      "Lightweight but stable long-run shoes to replace my Kayano 31 I’m training for a marathon early next year, and I’m looking to upgrade the shoes I use for my long runs/recovery. Currently, I have two in my rotation: \\- A…",
+      "Replacement for Endorphin Speed 4 Hey everyone, I wanted to see what your thoughts were on my next shoe. I am looking for a 'do it all' shoe to replace my Endorphin Speed 4. What are your thoughts on the options I am co…",
+      "Category peer in consumer consideration talk."
+    ],
+    [
+      "Brooks",
+      201,
+      1.61,
+      "Shoes for long walks, treadmill and standing Hello, I walk around 10-15k steps a day, go to the gym where I do incline treadmill walks / normal walks and am stood up most of the day Seeing as its black friday and I've b…",
+      "I have a standard wide foot (2E) and normal arch. I have also a feet condition which is plantar fasciitis on my left foot which is almost healed now. I have a tendency to roll my ankles outwards sometimes while running …",
+      "Reliable daily-trainer / comfort POP comparison."
+    ],
+    [
+      "New Balance",
+      191,
+      1.53,
+      "Shoes for long walks, treadmill and standing Hello, I walk around 10-15k steps a day, go to the gym where I do incline treadmill walks / normal walks and am stood up most of the day Seeing as its black friday and I've b…",
+      "I have a standard wide foot (2E) and normal arch. I have also a feet condition which is plantar fasciitis on my left foot which is almost healed now. I have a tendency to roll my ankles outwards sometimes while running …",
+      "Reliable daily-trainer / comfort POP comparison."
+    ],
+    [
+      "Saucony",
+      146,
+      1.17,
+      "Most shoes feel like they’re falling off my ankle - why and what’s this called? 5’4, 150lbs, size 8.5, neutral step I’m a new runner and I currently wear New Balance 1080 v14 and like them. I’ve been trying out other pa…",
+      "Replacement for Endorphin Speed 4 Hey everyone, I wanted to see what your thoughts were on my next shoe. I am looking for a 'do it all' shoe to replace my Endorphin Speed 4. What are your thoughts on the options I am co…",
+      "Reliable daily-trainer / comfort POP comparison."
+    ],
+    [
+      "Puma",
+      66,
+      0.53,
+      "Puma DNE3 Mid-Forefoot Striker Male 6’1 | 150lbs | 23:00 5K | Mid-forefoot striker Currently looking at getting my first carbon shoe for up to marathon distances, and I really like what I’ve been hearing about the Puma …",
+      "Tempo/race shoes Hi! So I finally found my new long-run and recovery shoe in the Puma magmax 2. Fantastic shoe. Now I want to add a shoe for my faster sessions that I can also use on ‘raceday’. I’m currently training fo…",
+      "Category peer in consumer consideration talk."
+    ],
+    [
+      "Topo",
+      40,
+      0.32,
+      "How to stop wasting money finding shoes that fit as a beginner? I started running 3 months ago and I am having issues to consistently find shoes that actually fit and would love your advice. Please know that I do not li…",
+      "Third shoe in rotation: double down on what works… or try something new? Third shoe in rotation: double down on what works… or try something new? Alright all you cool cats and kittens, I’m at that familiar fork in the r…",
+      "Category peer in consumer consideration talk."
+    ],
+    [
+      "Mizuno",
+      37,
+      0.3,
+      "Lightweight but stable long-run shoes to replace my Kayano 31 I’m training for a marathon early next year, and I’m looking to upgrade the shoes I use for my long runs/recovery. Currently, I have two in my rotation: \\- A…",
+      "ASICS Gt2000 , Neo Zen or neo vista 2?(85kg, casual runner) Hey everyone, I’m looking for some opinions on what type of running shoes I should go for. A bit of background about me: I’m about **85kg**, I run for **fun**,…",
+      "Category peer in consumer consideration talk."
+    ],
+    [
+      "Altra",
+      30,
+      0.24,
+      "Optimal drop height for bunions Question on Running shoe drop/bunions and flat feet What is the consensus (if there was one) for the optimal drop height for running shoes for people with bunions and flat feet Is it bett…",
+      "Shoes for walking, and thoughts on running and walking in the same shoes. I’m 6’0”, 193lbs, and run between 20-30 miles/week. I have a dedicated running shoe rotation (NovaBlast 5, Vomero Plus, Deviate Nitro 3, Evo SL) …",
+      "Category peer in consumer consideration talk."
+    ],
+    [
+      "Salomon",
+      22,
+      0.18,
+      "Megablast vs Superblast 3? Asking the age old (for the past 2-3months), megablast or Superblast 3s? I know this question has been asked a couple of times but here my specific circumstances lol: Looking for an everyday s…",
+      "Asics Trabuco 14 vs Topo MTN Racer 4 vs Saucomy Peregrine I am in the market for a pair of non-waterproof, breathable trail running shoes. I would use them for a mix of trail running and hiking with the family. My toes …",
+      "Category peer in consumer consideration talk."
+    ],
+    [
+      "Under Armour",
+      6,
+      0.05,
+      "I ordered shoes from oncloudxcanadasale.ca last week. I called my credit card company a few minutes afterwards when i realised it did not seem ligit anymore - different name and amount on credit card (frenmall) confirma…",
+      "I have recently started running 5k 4 times a week and I have these cloudmonsters. I moved from cheap under armour gym shoes so don’t have much of a comparison but they feel very supportive and have a nice amount of cush…",
+      "Category peer in consumer consideration talk."
+    ]
+  ],
+  "Quote_Bank": [
+    [
+      "exhibit_id",
+      "quote",
+      "valence_heuristic",
+      "score",
+      "source_file",
+      "subreddit",
+      "type",
+      "match_rules",
+      "permalink",
+      "use"
+    ],
+    [
+      "Q01",
+      "First Run: On Cloudmonster 3 Hyper They’ve finally done it. On has finally made a shoe that I actually want to run in. I have always been gleeful in my disdain for On, and my belief that they are just “glorified Sketchers for people who work in offices but need their coworkers a…",
+      "positive",
+      84,
+      "r_runningshoes_posts.jsonl",
+      "runningshoes",
+      "post",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/runningshoes/comments/1us3mf5/first_run_on_cloudmonster_3_hyper/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q02",
+      "You probably should read up on this subreddit and also probably hold off on running a marathon",
+      "mixed/neutral",
+      71,
+      "r_askrunningshoegeeks_comments.jsonl",
+      "AskRunningShoeGeeks",
+      "comment",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/AskRunningShoeGeeks/comments/1rgar54/is_this_running_good_enough_to_run_from_5k_to/o7pztgw/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q03",
+      "First run: ON LightSpray Cloudmonster 3 Hyper I finally retired my Nike's Pegasus 41s after dragging them through over 2000km (\\~1250 miles) over the last eight months. I am well aware that running that kind of mileage in one pair of shoes at is abusive, so switching to the Ligh…",
+      "positive",
+      65,
+      "r_runningshoes_posts.jsonl",
+      "runningshoes",
+      "post",
+      "model_or_brand_phrase",
+      "/r/runningshoes/comments/1waqu2v/first_run_on_lightspray_cloudmonster_3_hyper/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q04",
+      "Current rotation ❤️ \\- NB FC rebel v5 (easy runs, some tempo, great attire/fashion shoe) \\- Asics SB3 (long runs, recovery runs, can certainly pick up the pace if necessary, amazing shoe) \\- On Cloudboom 2 LS (race day, tempo, long runs, forefoot strikers who hate laces, absolut…",
+      "positive",
+      56,
+      "r_runningshoes_posts.jsonl",
+      "runningshoes",
+      "post",
+      "model_or_brand_phrase",
+      "/r/runningshoes/comments/1wjc7tz/current_rotation/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q05",
+      "Ain't nobody hyping On Cloud 5s. It's just the default lifestyle shoe of suburbia.",
+      "mixed/neutral",
+      53,
+      "r_runningshoes_comments.jsonl",
+      "runningshoes",
+      "comment",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/runningshoes/comments/1wndwtr/what_is_the_most_overhyped_shoe_of_all_time/pbe6ile/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q06",
+      "On LS cloudmonster 3 hyper My underfoot gets numb, like bloodflow is bring restricted when running in these pair of shoes. Read online that its true to size but if its too wide, the recommendation would be to size up? Or totally forget about this shoe. Ps: the ride is really ama…",
+      "positive",
+      49,
+      "r_askrunningshoegeeks_posts.jsonl",
+      "AskRunningShoeGeeks",
+      "post",
+      "model_or_brand_phrase",
+      "/r/AskRunningShoeGeeks/comments/1tflp4s/on_ls_cloudmonster_3_hyper/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q07",
+      "Cloudmonster Hyper 3 LS vs Megablast I was gifted a $250 gift card to Road Runners for my birthday. And I’ve been eyeing a new shoe for faster workouts & racing. Given price isn’t too much of a factor for me, any opinions which I should grab? I’m 5’10”, 180lbs and going for 1:55…",
+      "mixed/neutral",
+      47,
+      "r_askrunningshoegeeks_posts.jsonl",
+      "AskRunningShoeGeeks",
+      "post",
+      "model_or_brand_phrase",
+      "/r/AskRunningShoeGeeks/comments/1uq60gv/cloudmonster_hyper_3_ls_vs_megablast/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q08",
+      "Finally got the NB 9060 Finally picked up a pair of 9060s and I have to say, this shoe is more comfortable than any sneaker I own. It’s like walking on clouds, like a dream come true lol. They also look very good tho I know the bulkiness is an acquired taste. I own like 50+ Jord…",
+      "positive",
+      40,
+      "r_sneakers_posts.jsonl",
+      "Sneakers",
+      "post",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/Sneakers/comments/1vs103w/finally_got_the_nb_9060/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q09",
+      "What is the most overhyped shoe of all time? I’ll start: On Cloud 5s. They are everywhere right now, but the pods constantly trap rocks and they feel way too stiff for actual distance running. Honorable mention goes to the Hoka Clifton 9—super popular for everyday wear, but they…",
+      "negative",
+      39,
+      "r_runningshoes_posts.jsonl",
+      "runningshoes",
+      "post",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/runningshoes/comments/1wndwtr/what_is_the_most_overhyped_shoe_of_all_time/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q10",
+      "I think we are still in the throes of the satisfy and punk look being becoming main stream. Not to get all theoretical but in the Roger’s adoption curve, we’re probably still in the early majority phase. Most of the new brands cropping up look like the same UVU / 247 / whatever.…",
+      "mixed/neutral",
+      38,
+      "r_runningfashion_comments.jsonl",
+      "runningfashion",
+      "comment",
+      "model_or_brand_phrase",
+      "/r/runningfashion/comments/1nbol9c/a_little_observation/nd36kd9/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q11",
+      "I have two different models of OnClouds for walking, hiking, long stints on my feet. I have yet to wear a more comfortable shoe. Legit.",
+      "positive",
+      38,
+      "r_sneakers_comments.jsonl",
+      "Sneakers",
+      "comment",
+      "model_or_brand_phrase",
+      "/r/Sneakers/comments/1wloyrp/are_on_sneakers_actually_comfortable_or_am_i_just/pb0gjyu/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q12",
+      "200 mile check-in: On Cloudmonster 3 Hyper (do we have a new “champion shoe” of 2026?) I ran a half marathon race in the Cloudmonster 3 Hypers this morning, and while doing so crossed the 200 mile threshold with these shoes. I’m battling knee issues after running my marathon a c…",
+      "positive",
+      37,
+      "r_runningshoes_posts.jsonl",
+      "runningshoes",
+      "post",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/runningshoes/comments/1wfj7a6/200_mile_checkin_on_cloudmonster_3_hyper_do_we/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q13",
+      "First pair of Saucony, and it's the Endorphin Speed 5. Just received the Saucony Endorphin Speed 5! I have two weeks to break them in before the Brooklyn Half, and they’ll be replacing my trusty On Cloudmonster 2s. The initial test feel is great—I’ve been a loyal On fan and love…",
+      "positive",
+      30,
+      "r_runningshoes_posts.jsonl",
+      "runningshoes",
+      "post",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/runningshoes/comments/1t0z5iy/first_pair_of_saucony_and_its_the_endorphin_speed/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q14",
+      "On Cloudboom Strike - Underrated I am on my third pair of On Cloudboom Strike, I wear size 45. The shoe is super comfortable and has a good fit for people with regular/wide feet. I am usually using them for half marathons, 10k or 5k races. My first pair is almost at 600km, my se…",
+      "positive",
+      30,
+      "r_runningshoes_posts.jsonl",
+      "runningshoes",
+      "post",
+      "model_or_brand_phrase",
+      "/r/runningshoes/comments/1u90uqt/on_cloudboom_strike_underrated/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q15",
+      "No, but post-run coffee shop/farmer's market visits do happen. I would never put ON running clothes for a purpose other than running, but can be lazy to take them off",
+      "mixed/neutral",
+      28,
+      "r_runningfashion_comments.jsonl",
+      "runningfashion",
+      "comment",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/runningfashion/comments/1ulmez6/do_you_wear_your_running_clothes_casually/ov5c4vi/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q16",
+      "Puma Velocity Nitro 5 100km review About me/disclaimer: Male, 130lbs. I started running consistently (4+ times/week) this year after I got hooked on running shoes. I always buy shoes off discount. Nearly $200 for a daily trainer is bonkers. 2019's New Balance Fuelcell Propel was…",
+      "positive",
+      22,
+      "r_runningshoes_posts.jsonl",
+      "runningshoes",
+      "post",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/runningshoes/comments/1wnfvus/puma_velocity_nitro_5_100km_review/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q17",
+      "Adidas Adizero EVO SL or ASICS novablast 5 i’ve been training for my first marathon but I’ve been using oncloud cloudtilt shoes and I’ve got runner’s knee and Extensor Tendonitis, so I was wondering what shoe i should get for a training shoe. After consulting chatgpt and looking…",
+      "mixed/neutral",
+      21,
+      "r_askrunningshoegeeks_posts.jsonl",
+      "AskRunningShoeGeeks",
+      "post",
+      "model_or_brand_phrase",
+      "/r/AskRunningShoeGeeks/comments/1sm79hn/adidas_adizero_evo_sl_or_asics_novablast_5/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q18",
+      "Most people casually wearing Ons aren't rocking Cloudmonsters. They're Cloud 6's and Cloudtilts. This has been happening for years and it's nothing new. Like any trend it'll come and go, and also fashion. People wear Basketball sneakers casually. People wear Hiking shoes casuall…",
+      "mixed/neutral",
+      17,
+      "r_runningfashion_comments.jsonl",
+      "runningfashion",
+      "comment",
+      "ons_possessive_usage",
+      "/r/runningfashion/comments/1kqu24c/souring_on_on/mt8l3ro/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q19",
+      "Why does it have to be on cloud? The brand is rarely recommended here. Not because there's anything necessarily wrong with it, but they tend to be more expensive and less durable than your average asics/adidas/nike etc",
+      "mixed/neutral",
+      17,
+      "r_askrunningshoegeeks_comments.jsonl",
+      "AskRunningShoeGeeks",
+      "comment",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/AskRunningShoeGeeks/comments/1q228ky/pls_reco_on_cloud_running_shoes/nx9wb65/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q20",
+      "ONs are a more fabricy material. White fly knit would get equally dirty lol",
+      "mixed/neutral",
+      17,
+      "r_sneakers_comments.jsonl",
+      "Sneakers",
+      "comment",
+      "ons_possessive_usage",
+      "/r/Sneakers/comments/1xr1eje/tried_on_going_back_to_nike/19sc3dmzsdpcw/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q21",
+      "The only thing I'll say is that this model is not for running. On Cloud 5/6 etc are for walking or wearing to work. On make actual road and trail running shoes such as Cloudboom, Cloudultra, etc. You need to buy shoes for the correct activity",
+      "mixed/neutral",
+      15,
+      "r_onrunning_comments.jsonl",
+      "ONrunning",
+      "comment",
+      "subreddit_onrunning,model_or_brand_phrase",
+      "/r/ONrunning/comments/1ws6paz/2nd_pair_on_running_shoes_with_really_poor_quality/pcjtzck/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q22",
+      "These are casual shoes, so not for workouts or long walks. I’d get a more shock absorbing shoe like an on cloud or something.",
+      "mixed/neutral",
+      15,
+      "r_sneakers_comments.jsonl",
+      "Sneakers",
+      "comment",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/Sneakers/comments/1wxhom8/what_2x_legday_a_week_and_15k_steps_daily_does_to/pdtl0xr/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q23",
+      "These will always be my favorite shoe. Over the years I’ll get new kicks but still miss and crave these. Comfier than any oncloud fad. About to get another all black pair.",
+      "positive",
+      14,
+      "r_sneakers_comments.jsonl",
+      "Sneakers",
+      "comment",
+      "model_or_brand_phrase",
+      "/r/Sneakers/comments/1vtnam8/my_very_first_pair_of_cool_shoes_and_might_just/p4urxne/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q24",
+      "Yeah Ons are trash, basically 1 step up from Sketchers and people claiming otherwise are huffing pure copium",
+      "mixed/neutral",
+      14,
+      "r_sneakers_comments.jsonl",
+      "Sneakers",
+      "comment",
+      "ons_possessive_usage",
+      "/r/Sneakers/comments/1xr1eje/tried_on_going_back_to_nike/19sg9otym2s9t/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q25",
+      "I’ve done about 400km in my Cloudmonster and they are still pretty good, traction pattern is still very much there",
+      "mixed/neutral",
+      13,
+      "r_runningfashion_comments.jsonl",
+      "runningfashion",
+      "comment",
+      "model_or_brand_phrase",
+      "/r/runningfashion/comments/1koou6u/you_on/msrz0ns/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q26",
+      "ASICS Megablast vs On Cloudmonster 3 Hyper LightSpray Hello fellow geeks. The *ASICS Megablast* is my GOAT running trainer and the favourite child in my rotation for some time. I prefer it over my Carbons, at all speeds, from distances all the way to 50k. With 1000km clocked, it…",
+      "positive",
+      12,
+      "r_askrunningshoegeeks_posts.jsonl",
+      "AskRunningShoeGeeks",
+      "post",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/AskRunningShoeGeeks/comments/1v49nir/asics_megablast_vs_on_cloudmonster_3_hyper/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q27",
+      "Soccer player here. Only on running fashion and running brand subreddit because historically the apparel is much better than anything available in our sport. Authentics are ok performance wise, but not as light or breathable as the top tier running shirts, and they’re double the…",
+      "mixed/neutral",
+      12,
+      "r_runningfashion_comments.jsonl",
+      "runningfashion",
+      "comment",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/runningfashion/comments/1u70zxh/football_soccer_kit_running_tops/orxj31c/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q28",
+      "Help with running shoes Hello everyone, I wanted to seek your opinion on running shoes because I can’t seem to decide which kind I need or which pair would suit me best. I recently started running, and over the past few days I’ve noticed many people buying proper running shoes. …",
+      "positive",
+      11,
+      "r_runningshoes_posts.jsonl",
+      "runningshoes",
+      "post",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/runningshoes/comments/1r02xgz/help_with_running_shoes/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q29",
+      "Mom bought me new shoes from a sale during her work trip in Taiwan This will be my first On Cloud running shoes. Mom decided that since my pair of Sketchers Go Run 7 is slowly dying from wear and tear from heavy use once a week for cardio and gym she decided that maybe since I'm…",
+      "mixed/neutral",
+      11,
+      "r_runningshoes_posts.jsonl",
+      "runningshoes",
+      "post",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/runningshoes/comments/1xjhh23/mom_bought_me_new_shoes_from_a_sale_during_her/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q30",
+      "On cloudboom strike 2 confusion Are On making two different midsoles of the cloudboom strike ls? I’ve never seen this green version.",
+      "mixed/neutral",
+      11,
+      "r_askrunningshoegeeks_posts.jsonl",
+      "AskRunningShoeGeeks",
+      "post",
+      "model_or_brand_phrase",
+      "/r/AskRunningShoeGeeks/comments/1xbhzt6/on_cloudboom_strike_2_confusion/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q31",
+      "Looks exactly like my ON Cloudnova Form 2 bottoms. Definitely OnCloud",
+      "mixed/neutral",
+      11,
+      "r_askrunningshoegeeks_comments.jsonl",
+      "AskRunningShoeGeeks",
+      "comment",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/AskRunningShoeGeeks/comments/1pxe6mg/can_anyone_help_me_identify_what_type_of_shoe/nwarsmt/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q32",
+      "Cloudmonster Hyper 3. It may be worth contacting the On Cyclon store to see when they'll get new pairs in. They're a bit expensive at retail ($220) but On sells tried on returns for about $150. They have served a superblast 2-adjacent role for me so I think you can also argue it…",
+      "positive",
+      10,
+      "r_runningshoes_comments.jsonl",
+      "runningshoes",
+      "comment",
+      "model_or_brand_phrase",
+      "/r/runningshoes/comments/1veunyr/runners_knee_after_switching_to_superblast_3_need/p1k2b38/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q33",
+      "I do wish Ultraboost made a comeback. The most comfortable shoe I’ve worn. And I’ve worn On Cloud, HOKA, Nike React, etc. My pair from 7 years ago are still comfy and the quality is amazing.",
+      "positive",
+      10,
+      "r_sneakers_comments.jsonl",
+      "Sneakers",
+      "comment",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/Sneakers/comments/1wtuaj9/can_we_bring_back_the_nmd1_do_any_of_yall_daily/pcya7ru/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q34",
+      "Shoes for slower runners I'm looking for some advice on running shoes and this sub seemed like a great place 😊 I'm currently training for my first marathon I'm considering buying some speed/race day shoes - for fun mainly but also to see how different they feel in comparison to …",
+      "positive",
+      9,
+      "r_askrunningshoegeeks_posts.jsonl",
+      "AskRunningShoeGeeks",
+      "post",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/AskRunningShoeGeeks/comments/1prba9h/shoes_for_slower_runners/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q35",
+      "My mother gifted me an AP4 cherry blossom/ sakura, as a beginner should I use it? Reposting this. First post got deleted Hi! I'm new to running and started doing 5km runs last December. I already have two daily trainers (Hoka and New Balance), and I used the On Cloudmonster on r…",
+      "mixed/neutral",
+      9,
+      "r_askrunningshoegeeks_posts.jsonl",
+      "AskRunningShoeGeeks",
+      "post",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/AskRunningShoeGeeks/comments/1quqylk/my_mother_gifted_me_an_ap4_cherry_blossom_sakura/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q36",
+      "ON running shoes are known for dieing earlier than other brands. The average running shoe can probably get you about 800kms but ON have a tendency of feeling pretty dead after 600. Still usable but more wear at that point than others too. This is a page for ON fans so ppl are ab…",
+      "mixed/neutral",
+      9,
+      "r_onrunning_comments.jsonl",
+      "ONrunning",
+      "comment",
+      "subreddit_onrunning,model_or_brand_phrase",
+      "/r/ONrunning/comments/1spwiwf/on_running_shoes_durability_and_reliability/oh3ffbk/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q37",
+      "Especially walking 20k steps in Japan. Ya feet feel like walking on clouds. If I knew I was going to be walking somewhere these and new balances always came in handy",
+      "mixed/neutral",
+      9,
+      "r_sneakers_comments.jsonl",
+      "Sneakers",
+      "comment",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/Sneakers/comments/1wu6ozs/did_you_get_caught_up_in_the_boost_hype_10_years/pd2qog0/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q38",
+      "I second the Vomero Plus. Running on clouds and surprisingly not as heavy as you’d think with that cushioning",
+      "mixed/neutral",
+      9,
+      "r_askrunningshoegeeks_comments.jsonl",
+      "AskRunningShoeGeeks",
+      "comment",
+      "model_or_brand_phrase,on_brandish_phrase",
+      "/r/AskRunningShoeGeeks/comments/1q7rh71/what_is_everyones_favourite_long_run_shoes/nyi1rqb/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q39",
+      "The Cloudtilt is also not a running shoe by on, more of a lifestyle shoe",
+      "mixed/neutral",
+      9,
+      "r_askrunningshoegeeks_comments.jsonl",
+      "AskRunningShoeGeeks",
+      "comment",
+      "model_or_brand_phrase",
+      "/r/AskRunningShoeGeeks/comments/1qxldx9/new_to_running_need_reviews_regarding_these_pairs/o3xn3su/",
+      "Report exhibit candidate — verify context before citing"
+    ],
+    [
+      "Q40",
+      "Can’t comment on the rest, but personally the Cloudtilts have served me well during my trips, even when walking for hours. I would also check the Cloudmonster, people always recommend them for travelling.",
+      "positive",
+      8,
+      "r_onrunning_comments.jsonl",
+      "ONrunning",
+      "comment",
+      "subreddit_onrunning,model_or_brand_phrase",
+      "/r/ONrunning/comments/1r2q2rv/please_help_me_decide_which_one_should_i_buy_id/o4ykniy/",
+      "Report exhibit candidate — verify context before citing"
+    ]
+  ],
+  "Survey_Implications": [
+    [
+      "item",
+      "detail",
+      "measure_strength",
+      "measure_valence_favorability",
+      "measure_uniqueness",
+      "course_citation"
+    ],
+    [
+      "FRAME — Brand Exploratory dimensions",
+      "Survey must cover Awareness (recognition & recall), Associations, Perceived Quality, Loyalty, and optional Brand Personality (assignment Qs + 03_08_Quantitative Research III).",
+      "",
+      "",
+      "",
+      "04-brand-exploratory-strategy-report; 01_03–01_06; 03_08"
+    ],
+    [
+      "Awareness — unaided recall",
+      "Open-end: 'Which running shoe brands are you familiar with?' / consideration set. On appearance = unaided recall proxy (Brand Awareness Pyramid, 01_03; wording pattern 03_08).",
+      "n/a",
+      "n/a",
+      "n/a",
+      "01_03_Brand Equity Components I; 03_08_Quantitative Research III"
+    ],
+    [
+      "Awareness — recognition",
+      "Aided list including On / On Cloud among competitors. Separates recognition from recall.",
+      "n/a",
+      "n/a",
+      "n/a",
+      "01_03_Brand Equity Components I; 03_08_Quantitative Research III"
+    ],
+    [
+      "Association candidate A1: Style / fashion / aesthetics",
+      "Emerged from C2C text mining (n=1654 On-relevant records with theme cues). Include alongside the five Brand Inventory identity associations for image–identity gap matching.",
+      "To what degree does this attribute describe On? 1=Not at all … 5=Very descriptive",
+      "Is this attribute desirable? 1=Very undesirable … 5=Very desirable (assignment Valence; maps to Favorability in 01_04)",
+      "How different from competing brands is this for On? 1=Not at all … 5=Very different",
+      "01_04_Brand Equity Components II (Strength/Favorability/Uniqueness); Brand Exploratory association scales"
+    ],
+    [
+      "Association candidate A2: Fit / sizing / narrow",
+      "Emerged from C2C text mining (n=1092 On-relevant records with theme cues). Include alongside the five Brand Inventory identity associations for image–identity gap matching.",
+      "To what degree does this attribute describe On? 1=Not at all … 5=Very descriptive",
+      "Is this attribute desirable? 1=Very undesirable … 5=Very desirable (assignment Valence; maps to Favorability in 01_04)",
+      "How different from competing brands is this for On? 1=Not at all … 5=Very different",
+      "01_04_Brand Equity Components II (Strength/Favorability/Uniqueness); Brand Exploratory association scales"
+    ],
+    [
+      "Association candidate A3: Comfort",
+      "Emerged from C2C text mining (n=889 On-relevant records with theme cues). Include alongside the five Brand Inventory identity associations for image–identity gap matching.",
+      "To what degree does this attribute describe On? 1=Not at all … 5=Very descriptive",
+      "Is this attribute desirable? 1=Very undesirable … 5=Very desirable (assignment Valence; maps to Favorability in 01_04)",
+      "How different from competing brands is this for On? 1=Not at all … 5=Very different",
+      "01_04_Brand Equity Components II (Strength/Favorability/Uniqueness); Brand Exploratory association scales"
+    ],
+    [
+      "Association candidate A4: Everyday / lifestyle wear",
+      "Emerged from C2C text mining (n=882 On-relevant records with theme cues). Include alongside the five Brand Inventory identity associations for image–identity gap matching.",
+      "To what degree does this attribute describe On? 1=Not at all … 5=Very descriptive",
+      "Is this attribute desirable? 1=Very undesirable … 5=Very desirable (assignment Valence; maps to Favorability in 01_04)",
+      "How different from competing brands is this for On? 1=Not at all … 5=Very different",
+      "01_04_Brand Equity Components II (Strength/Favorability/Uniqueness); Brand Exploratory association scales"
+    ],
+    [
+      "Association candidate A5: Durability / longevity",
+      "Emerged from C2C text mining (n=690 On-relevant records with theme cues). Include alongside the five Brand Inventory identity associations for image–identity gap matching.",
+      "To what degree does this attribute describe On? 1=Not at all … 5=Very descriptive",
+      "Is this attribute desirable? 1=Very undesirable … 5=Very desirable (assignment Valence; maps to Favorability in 01_04)",
+      "How different from competing brands is this for On? 1=Not at all … 5=Very different",
+      "01_04_Brand Equity Components II (Strength/Favorability/Uniqueness); Brand Exploratory association scales"
+    ],
+    [
+      "Association candidate A6: Performance / running / speed",
+      "Emerged from C2C text mining (n=609 On-relevant records with theme cues). Include alongside the five Brand Inventory identity associations for image–identity gap matching.",
+      "To what degree does this attribute describe On? 1=Not at all … 5=Very descriptive",
+      "Is this attribute desirable? 1=Very undesirable … 5=Very desirable (assignment Valence; maps to Favorability in 01_04)",
+      "How different from competing brands is this for On? 1=Not at all … 5=Very different",
+      "01_04_Brand Equity Components II (Strength/Favorability/Uniqueness); Brand Exploratory association scales"
+    ],
+    [
+      "Association candidate A7: Injury / support concerns",
+      "Emerged from C2C text mining (n=506 On-relevant records with theme cues). Include alongside the five Brand Inventory identity associations for image–identity gap matching.",
+      "To what degree does this attribute describe On? 1=Not at all … 5=Very descriptive",
+      "Is this attribute desirable? 1=Very undesirable … 5=Very desirable (assignment Valence; maps to Favorability in 01_04)",
+      "How different from competing brands is this for On? 1=Not at all … 5=Very different",
+      "01_04_Brand Equity Components II (Strength/Favorability/Uniqueness); Brand Exploratory association scales"
+    ],
+    [
+      "Association candidate A8: Cloud cushioning / cloud feel",
+      "Emerged from C2C text mining (n=474 On-relevant records with theme cues). Include alongside the five Brand Inventory identity associations for image–identity gap matching.",
+      "To what degree does this attribute describe On? 1=Not at all … 5=Very descriptive",
+      "Is this attribute desirable? 1=Very undesirable … 5=Very desirable (assignment Valence; maps to Favorability in 01_04)",
+      "How different from competing brands is this for On? 1=Not at all … 5=Very different",
+      "01_04_Brand Equity Components II (Strength/Favorability/Uniqueness); Brand Exploratory association scales"
+    ],
+    [
+      "Association candidate A9: Switching / comparison shopping",
+      "Emerged from C2C text mining (n=441 On-relevant records with theme cues). Include alongside the five Brand Inventory identity associations for image–identity gap matching.",
+      "To what degree does this attribute describe On? 1=Not at all … 5=Very descriptive",
+      "Is this attribute desirable? 1=Very undesirable … 5=Very desirable (assignment Valence; maps to Favorability in 01_04)",
+      "How different from competing brands is this for On? 1=Not at all … 5=Very different",
+      "01_04_Brand Equity Components II (Strength/Favorability/Uniqueness); Brand Exploratory association scales"
+    ],
+    [
+      "Association candidate A10: Premium / expensive / price",
+      "Emerged from C2C text mining (n=421 On-relevant records with theme cues). Include alongside the five Brand Inventory identity associations for image–identity gap matching.",
+      "To what degree does this attribute describe On? 1=Not at all … 5=Very descriptive",
+      "Is this attribute desirable? 1=Very undesirable … 5=Very desirable (assignment Valence; maps to Favorability in 01_04)",
+      "How different from competing brands is this for On? 1=Not at all … 5=Very different",
+      "01_04_Brand Equity Components II (Strength/Favorability/Uniqueness); Brand Exploratory association scales"
+    ],
+    [
+      "Perceived quality battery",
+      "Rate On and 2–3 competitors (e.g., Hoka, Nike, Brooks) on comfort, cushioning, durability, fit, style, performance, value — comparative PQ (01_05; 03_08).",
+      "1–7 or 1–10 perception ratings",
+      "Implied by higher=better scales; optionally separate desirability",
+      "Optional difference item per dimension",
+      "01_05_Brand Equity Components III; 03_08_Quantitative Research III"
+    ],
+    [
+      "Loyalty battery",
+      "Satisfaction, repurchase likelihood, brand preference ranking, and NPS recommend 0–10 among users only (03_08; Loyalty Pyramid 01_06).",
+      "n/a",
+      "Attitude/satisfaction scales",
+      "n/a",
+      "01_06_Brand Equity Components IV; 03_08_Quantitative Research III"
+    ],
+    [
+      "Brand personality ratings",
+      "Rate On on Aaker facets emphasizing Excitement, Sophistication, Competence (hypotheses from C2C).",
+      "Trait descriptiveness 1–5",
+      "Optional",
+      "Optional vs competitor personality",
+      "02_03_Brand Positioning III; 03_08_Quantitative Research III"
+    ]
+  ],
+  "AI_Use_Log": [
+    [
+      "AI Use / GenAI Disclosure Log",
+      ""
+    ],
+    [
+      "",
+      ""
+    ],
+    [
+      "Section / Item",
+      "Content (evidence / analysis)"
+    ],
+    [
+      "Tool",
+      "Cursor IDE agent (Composer) for text mining script + Excel workbook creation."
+    ],
+    [
+      "Student responsibility",
+      "Student must verify quotes against source JSONL, validate matching precision/recall on a sample, and confirm course citations against actual Class PowerPoints decks before submission."
+    ],
+    [
+      "Prompt summary",
+      "Analyze Reddit C2C JSONL for On/On Cloud; export Brand Exploratory Excel; frame with Class PowerPoints frameworks (awareness recognition/recall, associations strength/favorability/uniqueness, perceived quality, loyalty, personality); update AGENTPROMPTLOG; do not git commit."
+    ],
+    [
+      "Data processed",
+      "r_askrunningshoegeeks_posts.jsonl, r_askrunningshoegeeks_comments.jsonl, r_onrunning_comments.jsonl, r_runningfashion_comments.jsonl, r_runningshoes_comments.jsonl, r_runningshoes_posts.jsonl, r_sneakers_posts.jsonl, r_sneakers_comments.jsonl"
+    ],
+    [
+      "Output file",
+      "C:\\Users\\Owner\\Desktop\\UF MBA Y2 Projects\\MAR6335 Brand Inventory Project\\Brand Sentiment Analysis\\OnCloud_C2C_Brand_Exploratory.xlsx"
+    ],
+    [
+      "Class materials used (extracted slide text standing in for Class PowerPoints/)",
+      "01_03_Brand Equity Components I; 01_04_Brand Equity Components II; 01_05_Brand Equity Components III; 01_06_Brand Equity Components IV; 02_03_Brand Positioning III; 03_01_Qualitative Research I; 03_08_Quantitative Research III; plus Assignments/04-brand-exploratory-strategy-report.md. Note: Class PowerPoints/ folder not present as files in workspace at runtime; content applied from Other/_pptx_extract/ mirrors of those decks."
+    ],
+    [
+      "GenAI limitations",
+      "Automated theme/valence coding can misclassify sarcasm/context; quotes are truncated; findings are exploratory hypotheses for Brand Exploratory, not definitive equity scores."
+    ],
+    [
+      "Date",
+      "2026-11-17T18:41:54"
+    ]
+  ]
+}
